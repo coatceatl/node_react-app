@@ -1,5 +1,5 @@
 //console.log('Hello, unicorns!');
-
+/*
 import React from 'react';
 
 class MainPage extends React.Component {
@@ -11,3 +11,5 @@ class MainPage extends React.Component {
 }
 
 export default MainPage;
+*/
+
