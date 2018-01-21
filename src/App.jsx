@@ -3,7 +3,7 @@
 
 import React from 'react';
 import Header from './Header.jsx';
-import MainPage from './MainPage.jsx';
+//import MainPage from './MainPage.jsx';
 
 ReactDOM.render(
   <Header />,

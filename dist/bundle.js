@@ -8980,14 +8980,14 @@ var _Header = __webpack_require__(141);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _MainPage = __webpack_require__(299);
-
-var _MainPage2 = _interopRequireDefault(_MainPage);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-ReactDOM.render(_react2.default.createElement(_Header2.default, null), document.getElementById('root')); //import './rainbows.js';
+//import MainPage from './MainPage.jsx';
+
+//import './rainbows.js';
 //import './unicorns.js';
+
+ReactDOM.render(_react2.default.createElement(_Header2.default, null), document.getElementById('root'));
 
 /***/ }),
 /* 139 */
@@ -10409,8 +10409,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //console.log('This is a rainbows.js');
 
-var Header = function (_React$Component) {
-  _inherits(Header, _React$Component);
+var Header = function (_Component) {
+  _inherits(Header, _Component);
 
   function Header() {
     _classCallCheck(this, Header);
@@ -10461,7 +10461,7 @@ var Header = function (_React$Component) {
   }]);
 
   return Header;
-}(_react2.default.Component);
+}(_react.Component);
 
 exports.default = Header;
 
@@ -38670,56 +38670,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-/***/ }),
-/* 299 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //console.log('Hello, unicorns!');
-
-var MainPage = function (_React$Component) {
-  _inherits(MainPage, _React$Component);
-
-  function MainPage() {
-    _classCallCheck(this, MainPage);
-
-    return _possibleConstructorReturn(this, (MainPage.__proto__ || Object.getPrototypeOf(MainPage)).apply(this, arguments));
-  }
-
-  _createClass(MainPage, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'page' },
-        'This is a MAIN page!!!'
-      );
-    }
-  }]);
-
-  return MainPage;
-}(_react2.default.Component);
-
-exports.default = MainPage;
 
 /***/ })
 /******/ ]);

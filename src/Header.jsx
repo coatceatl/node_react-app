@@ -1,6 +1,6 @@
 //console.log('This is a rainbows.js');
 
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Button,
   FormGroup,
@@ -8,7 +8,7 @@ import {
   Navbar,
 } from 'react-bootstrap';
 
-class Header extends React.Component {
+class Header extends Component {
   render () {
     return (
       <div>
