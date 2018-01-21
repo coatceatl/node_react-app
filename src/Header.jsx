@@ -1,5 +1,3 @@
-//console.log('This is a rainbows.js');
-
 import React, { Component } from 'react';
 import {
   Button,
