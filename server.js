@@ -1,7 +1,12 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const path = require('path');
 const bodyParser = require('body-parser');
+require('./serverside/models/User');
 require('./serverside/services/passport.js');
+
+
+//mongoose.connect('mongodb://localhost/users);
 
 const app = express();
 
