@@ -5,8 +5,7 @@ const bodyParser = require('body-parser');
 require('./serverside/models/User');
 require('./serverside/services/passport.js');
 
-
-//mongoose.connect('mongodb://localhost/users);
+mongoose.connect('mongodb://localhost:27017/users');
 
 const app = express();
 
