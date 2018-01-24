@@ -11,6 +11,7 @@ require('./serverside/services/passport.js');
 mongoose.connect('mongodb://localhost:27017/users');
 
 const app = express();
+app.use(bodyParser.json());
 
 app.use(
   cookieSession({
@@ -24,10 +25,15 @@ app.use(passport.session());
 
 require('./serverside/routes/authRoutes.js')(app);
 
-const PORT = process.env.PORT || 4000;
+app.use(express.static('public'));
 
-//app.use(express.static(path.resolve(__dirname, 'public')));
-//app.use(bodyParser.json());
+/*
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+});
+*/
+
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
   console.log('server started');
