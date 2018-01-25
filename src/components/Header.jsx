@@ -1,28 +1,25 @@
 import React, { Component } from 'react';
+
 import {
-  Button,
-  FormGroup,
-  FormControl,
+  Nav,
   Navbar,
+  NavItem
 } from 'react-bootstrap';
 
 class Header extends Component {
   render () {
     return (
-      <div>
-        <Navbar>
+      <div className='container'>
+        <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              React Weather App
+              <a href='#brand'>Funny Toys Amiguru</a>
             </Navbar.Brand>
           </Navbar.Header>
           <Navbar.Collapse>
-            <Navbar.Form pullRight>
-              <FormGroup>
-                <FormControl type='text' placeholder='Search' />
-              </FormGroup>{' '}
-              <Button type='submit'>Submit</Button>
-            </Navbar.Form>
+            <Nav pullRight>
+              <NavItem href='#'>Sign in with Google</NavItem>
+            </Nav>
           </Navbar.Collapse>
         </Navbar>
       </div>

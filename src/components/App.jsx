@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter,
+  Route
+  //  Switch,
+  //  Link
+} from 'react-router-dom';
+import { connect } from 'react-redux';
+import * as actions from '../actions';
+
+import Header from './Header.jsx';
+const Dashboard = () => <h2>Dashboard</h2>
+const SurveyNew = () => <h2>SurveyNew</h2>
+const Products = () => <h2>Products</h2>
 
 /*
-import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Link
-} from 'react-router-dom';
-
-import {Header} from './Header.jsx';
 import {Signin} from './Signin.jsx';
 import {Signup} from './Signup.jsx';
 import {Dashboard} from './Dashboard.jsx';
@@ -39,13 +43,22 @@ ReactDOM.render(
 */
 
 class App extends Component {
+  componentDidMount() {
+    this.props.fetchUser();
+  }
+
   render() {
     return (
       <div>
-        <h1> Hello from App</h1>
+        <BrowserRouter>
+          <div>
+            <Header />
+            <Route exact path='/' component={Products} />
+          </div>
+        </BrowserRouter>
       </div>
     );
   }
 }
 
-export default App;
+export default connect(null, actions)(App);
