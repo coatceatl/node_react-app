@@ -19,6 +19,7 @@
     "body-parser": "^1.18.2",
     "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
     "mongoose": "^5.0.1",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
@@ -29,7 +30,11 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
+    "style-loader": "^0.20.1",
     "webpack": "^3.10.0",
     "webpack-watch-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.9"
   }
 }

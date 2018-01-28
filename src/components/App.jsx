@@ -10,7 +10,7 @@ import * as actions from '../actions';
 
 import Header from './Header.jsx';
 const Dashboard = () => <h2>Dashboard</h2>
-const Landing = () => <h2>Landing</h2>
+const MainPage = () => <h2>MainPage</h2>
 const Products = () => <h2>Products</h2>
 
 /*
@@ -54,7 +54,7 @@ class App extends Component {
           <div>
             <Header />
             <Route exact path='/' component={Products} />
-            <Route path='/landing' component={Landing} />
+            <Route path='/landing' component={MainPage} />
             <Route path='/dashboard' component={Dashboard} />
           </div>
         </BrowserRouter>

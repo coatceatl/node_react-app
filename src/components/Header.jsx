@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import './Header.css';
 
-{/*
 import {
-  Nav,
   Navbar,
-  NavItem
+  NavItem,
+  NavDropdown,
+  Nav,
+  MenuItem
 } from 'react-bootstrap';
-
-*/}
 
 class Header extends Component {
   renderContent() {
@@ -26,27 +26,31 @@ class Header extends Component {
 
   render () {
     return (
-      <div className='container'>
-        <h2>Funny Toys Amiguru</h2>
-        <ul>
-          {this.renderContent()}
-        </ul>
-        {/*
-        <Navbar inverse collapseOnSelect>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <a href='#brand'>Funny Toys Amiguru</a>
-            </Navbar.Brand>
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav pullRight>
-              {this.renderContent()}
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-        */}
 
+      /*
+      <div className='container'>
+        <nav className='navbar navbar-light bg-faded'>
+  
+            <h1 className='navbar-brand'>
+              <a href='#home'>Funny Toys Amigurumi</a>
+              {this.renderContent()}
+            </h1>
+          
+        </nav>
       </div>
+
+*/
+
+      <Navbar>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <a href="#home">Funny Toys Amigurumi</a>
+          </Navbar.Brand>
+        </Navbar.Header>
+        <Nav pullRight>
+            {this.renderContent()}
+        </Nav>
+      </Navbar>
     );
   }
 }
