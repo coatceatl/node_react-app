@@ -35114,41 +35114,26 @@ var Header = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      return (
-
-        /*
-        <div className='container'>
-          <nav className='navbar navbar-light bg-faded'>
-                 <h1 className='navbar-brand'>
-                <a href='#home'>Funny Toys Amigurumi</a>
-                {this.renderContent()}
-              </h1>
-            
-          </nav>
-        </div>
-        */
-
+      return _react2.default.createElement(
+        _reactBootstrap.Navbar,
+        { className: 'app-navbar' },
         _react2.default.createElement(
-          _reactBootstrap.Navbar,
-          null,
+          _reactBootstrap.Navbar.Header,
+          { className: 'app-header' },
           _react2.default.createElement(
-            _reactBootstrap.Navbar.Header,
-            null,
+            _reactBootstrap.Navbar.Brand,
+            { className: 'app-brand' },
             _react2.default.createElement(
-              _reactBootstrap.Navbar.Brand,
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: '#home' },
-                'Funny Toys Amigurumi'
-              )
+              'a',
+              { href: '#home' },
+              'Funny Toys Amigurumi'
             )
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Nav,
-            { pullRight: true },
-            this.renderContent()
           )
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Nav,
+          { pullRight: true, className: 'nav-item' },
+          this.renderContent()
         )
       );
     }
@@ -35222,7 +35207,7 @@ exports = module.exports = __webpack_require__(264)(false);
 
 
 // module
-exports.push([module.i, "/*\n.navbar-brand {\n  color: #333;\n}\n\na {\n  color: #aaa;\n  font-weight: 200;\n}\n*/\n\n.container {\n  background-color: #aaa;\n}\n", ""]);
+exports.push([module.i, ".app-navbar {\n  background-color: #002966;\n  height: 150px;\n  padding: 20px;\n  border-color: #e7e7e7;\n  display: flex;\n  justify-content: space-between;\n}\n\na {\n  color:white;\n}\n\n.navbar-brand {\n  font-size: 42px;\n}\n\n.app-brand{\n  color: white;\n}\n\n.nav-item {\n  font-size: 22px;\n}\n", ""]);
 
 // exports
 

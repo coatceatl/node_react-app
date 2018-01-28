@@ -26,28 +26,13 @@ class Header extends Component {
 
   render () {
     return (
-
-      /*
-      <div className='container'>
-        <nav className='navbar navbar-light bg-faded'>
-  
-            <h1 className='navbar-brand'>
-              <a href='#home'>Funny Toys Amigurumi</a>
-              {this.renderContent()}
-            </h1>
-          
-        </nav>
-      </div>
-
-*/
-
-      <Navbar>
-        <Navbar.Header>
-          <Navbar.Brand>
+      <Navbar className='app-navbar'>
+        <Navbar.Header className='app-header'>
+          <Navbar.Brand className='app-brand'>
             <a href="#home">Funny Toys Amigurumi</a>
           </Navbar.Brand>
         </Navbar.Header>
-        <Nav pullRight>
+        <Nav pullRight className='nav-item'>
             {this.renderContent()}
         </Nav>
       </Navbar>

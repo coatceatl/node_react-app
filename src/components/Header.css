@@ -1,14 +1,24 @@
-/*
-.navbar-brand {
-  color: #333;
+.app-navbar {
+  background-color: #002966;
+  height: 150px;
+  padding: 20px;
+  border-color: #e7e7e7;
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
-  color: #aaa;
-  font-weight: 200;
+  color:white;
 }
-*/
 
-.container {
-  background-color: #aaa;
+.navbar-brand {
+  font-size: 42px;
+}
+
+.app-brand{
+  color: white;
+}
+
+.nav-item {
+  font-size: 22px;
 }
