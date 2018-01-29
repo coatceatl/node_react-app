@@ -32,6 +32,12 @@ class Header extends Component {
             <a href="#home">Funny Toys Amigurumi</a>
           </Navbar.Brand>
         </Navbar.Header>
+        <Nav>
+          <h1>
+            Get something special for that someone special
+          </h1>
+        </Nav>
+
         <Nav pullRight className='nav-item'>
             {this.renderContent()}
         </Nav>

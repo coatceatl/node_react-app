@@ -35130,6 +35130,15 @@ var Header = function (_Component) {
         ),
         _react2.default.createElement(
           _reactBootstrap.Nav,
+          null,
+          _react2.default.createElement(
+            'h1',
+            null,
+            'Get something special for that someone special'
+          )
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Nav,
           { pullRight: true, className: 'nav-item' },
           this.renderContent()
         )
@@ -35205,7 +35214,7 @@ exports = module.exports = __webpack_require__(264)(false);
 
 
 // module
-exports.push([module.i, ".app-navbar {\n  background-color: #0a3c88;\n  height: 150px;\n  padding: 20px;\n  border-color: #e7e7e7;\n  display: flex;\n  justify-content: space-between;\n}\n\na {\n  color:white;\n}\n\n.navbar-brand {\n  font-size: 42px;\n}\n\n.app-brand{\n  color: white;\n}\n\n.nav-item {\n  font-size: 22px;\n}\n", ""]);
+exports.push([module.i, ".app-navbar {\n  background-color: #ef8702;\n  height: 150px;\n  padding: 20px;\n  border-color: #e7e7e7;\n  display: flex;\n  justify-content: space-between;\n}\n\na {\n  color:white;\n}\n\n.navbar-brand {\n  font-size: 22px;\n}\n\n.app-brand{\n  color: white;\n}\n\n.nav-item {\n  font-size: 16px;\n}\n\nh3 {\n  font-weight: bold;\n}\n", ""]);
 
 // exports
 
