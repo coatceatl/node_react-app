@@ -21,10 +21,6 @@ module.exports = (app) => {
     res.redirect('/');
   });
 
-  app.get('/dashboard', (req, res) => {
-    res.render('Dashboard');
-  });
-
   app.get('/api/current_user', (req, res) => {
     res.send(req.user);
   });
