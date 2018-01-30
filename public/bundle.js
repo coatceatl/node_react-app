@@ -47535,7 +47535,7 @@ var Landing = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.CarouselItem,
             null,
-            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'koala', src: 'img/slide3.png' }),
+            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'koala', src: 'img/slide_koala1.png' }),
             _react2.default.createElement(
               'h3',
               null,
@@ -47545,7 +47545,7 @@ var Landing = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.CarouselItem,
             null,
-            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'lamb', src: 'img/slide2.png' }),
+            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'lamb', src: 'img/slide_lamb.png' }),
             _react2.default.createElement(
               'h3',
               null,
@@ -47555,7 +47555,7 @@ var Landing = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.CarouselItem,
             null,
-            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'doll', src: 'img/slide4.png' }),
+            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'doll', src: 'img/slide_doll1.png' }),
             _react2.default.createElement(
               'h3',
               null,
@@ -47565,7 +47565,7 @@ var Landing = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.CarouselItem,
             null,
-            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'cat', src: 'img/slide1.png' }),
+            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'cat', src: 'img/slide_cat.png' }),
             _react2.default.createElement(
               'h3',
               null,
