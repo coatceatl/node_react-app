@@ -35392,17 +35392,13 @@ var Header = function (_Component) {
           ),
           _react2.default.createElement(
             _reactBootstrap.Nav,
-            null,
+            { pullRight: true },
             _react2.default.createElement(
-              _reactBootstrap.NavItem,
+              'p',
               null,
               'Get something special for that someone special'
             ),
-            _react2.default.createElement(
-              _reactBootstrap.NavItem,
-              null,
-              this.renderContent()
-            )
+            this.renderContent()
           )
         )
       );
@@ -35477,7 +35473,7 @@ exports = module.exports = __webpack_require__(265)(false);
 
 
 // module
-exports.push([module.i, ".app-navbar {\n  background-color: #ef8702;\n  height: 150px;\n  padding: 20px;\n  border-color: #e7e7e7;\n  display: flex;\n  justify-content: space-between;\n}\n\na {\n  color:white;\n}\n\n.navbar-brand {\n  font-size: 22px;\n}\n\n.app-brand{\n  color: white;\n}\n\n.nav-item {\n  font-size: 16px;\n}\n\nh3 {\n  font-weight: bold;\n}\n", ""]);
+exports.push([module.i, ".navbar {\n  background-color: #ef8702;\n  height: 150px;\n  padding: 20px;\n  border-color: #e7e7e7;\n  display: flex;\n  justify-content: space-between;\n}\n\na {\n  color:white;\n  font-size: 16px;\n}\n\n.navbar-brand {\n  font-size: 20px;\n  font-weight: bold;\n  color: #1622dc;\n}\n\n.navbar-nav {\n  justify-content: space-between;\n}\n\np {\n  font-weight: bold;\n  font-size: 22px;\n}\n\n.signin {\n  font-size: 16px;\n  align-content: right;\n}\n", ""]);
 
 // exports
 
@@ -47547,7 +47543,7 @@ var Landing = function (_Component) {
             _react2.default.createElement(
               'h3',
               null,
-              'First slide label'
+              'Koala'
             )
           ),
           _react2.default.createElement(
@@ -47557,7 +47553,7 @@ var Landing = function (_Component) {
             _react2.default.createElement(
               'h3',
               null,
-              'Second slide label'
+              'Lamb'
             )
           ),
           _react2.default.createElement(
@@ -47567,7 +47563,17 @@ var Landing = function (_Component) {
             _react2.default.createElement(
               'h3',
               null,
-              'Third slide label'
+              'Doll'
+            )
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.CarouselItem,
+            null,
+            _react2.default.createElement('img', { width: 1024, height: 500, alt: 'rabbit', src: 'img/slide1.png' }),
+            _react2.default.createElement(
+              'h3',
+              null,
+              'Cat'
             )
           )
         )

@@ -1,4 +1,4 @@
-.app-navbar {
+.navbar {
   background-color: #ef8702;
   height: 150px;
   padding: 20px;
@@ -9,20 +9,25 @@
 
 a {
   color:white;
-}
-
-.navbar-brand {
-  font-size: 22px;
-}
-
-.app-brand{
-  color: white;
-}
-
-.nav-item {
   font-size: 16px;
 }
 
-h3 {
+.navbar-brand {
+  font-size: 20px;
   font-weight: bold;
+  color: #1622dc;
+}
+
+.navbar-nav {
+  justify-content: space-between;
+}
+
+p {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.signin {
+  font-size: 16px;
+  align-content: right;
 }
