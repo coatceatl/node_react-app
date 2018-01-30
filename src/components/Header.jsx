@@ -5,7 +5,7 @@ import './Header.css';
 import {
   Nav,
   Navbar,
-  NavItem
+  NavItem,
   } from 'react-bootstrap';
 
 class Header extends Component {
@@ -31,12 +31,10 @@ class Header extends Component {
               <a href="#home">Funny Toys Amigurumi</a>
             </Navbar.Brand>
           </Navbar.Header>
-          <Nav pullRight>
-            <p>
-              Get something special for that someone special
-            </p>
-              {this.renderContent()}
-          </Nav>
+          <p className='NavbarText'>
+            Get something special for that someone special
+          </p>
+          {this.renderContent()}
         </Navbar>
       </div>
     );

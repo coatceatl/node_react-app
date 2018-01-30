@@ -10,7 +10,7 @@ import Header from './Header.jsx';
 import Landing from './Landing.jsx';
 import Dashboard from './Dashboard.jsx';
 import Footer from './Footer.jsx';
-const Orders = () => <h2>Orders</h2>
+const Orders = () => <h1>Orders</h1>;
 
 class App extends Component {
   componentDidMount() {

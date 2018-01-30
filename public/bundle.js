@@ -31302,7 +31302,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var Orders = function Orders() {
   return _react2.default.createElement(
-    'h2',
+    'h1',
     null,
     'Orders'
   );
@@ -35391,15 +35391,11 @@ var Header = function (_Component) {
             )
           ),
           _react2.default.createElement(
-            _reactBootstrap.Nav,
-            { pullRight: true },
-            _react2.default.createElement(
-              'p',
-              null,
-              'Get something special for that someone special'
-            ),
-            this.renderContent()
-          )
+            'p',
+            { className: 'NavbarText' },
+            'Get something special for that someone special'
+          ),
+          this.renderContent()
         )
       );
     }
@@ -35473,7 +35469,7 @@ exports = module.exports = __webpack_require__(265)(false);
 
 
 // module
-exports.push([module.i, ".navbar {\n  background-color: #ef8702;\n  height: 150px;\n  padding: 20px;\n  border-color: #e7e7e7;\n  display: flex;\n  justify-content: space-between;\n}\n\na {\n  color:white;\n  font-size: 16px;\n}\n\n.navbar-brand {\n  font-size: 20px;\n  font-weight: bold;\n  color: #1622dc;\n}\n\n.navbar-nav {\n  justify-content: space-between;\n}\n\np {\n  font-weight: bold;\n  font-size: 22px;\n}\n\n.signin {\n  font-size: 16px;\n  align-content: right;\n}\n", ""]);
+exports.push([module.i, ".navbar {\n  background-color: #ef8702;\n  height: 150px;\n  padding: 20px;\n  border-color: #e7e7e7;\n}\n\n.container {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  display: flex;\n  justify-content: space-between;\n}\n\na {\n  color:white;\n  font-size: 16px;\n}\n\n.navbar-brand {\n  font-size: 22px;\n  font-weight: bold;\n  color: #1622dc;\n}\n\np {\n  font-weight: bold;\n  font-size: 22px;\n  padding: 15px;\n}\n\n.signin {\n  font-size: 22px;\n  align-content: right;\n  padding: 15px;\n}\n\nli {\n  padding: 15px;\n}\n", ""]);
 
 // exports
 
@@ -47539,7 +47535,7 @@ var Landing = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.CarouselItem,
             null,
-            _react2.default.createElement('img', { width: 1024, height: 500, alt: 'rabbit', src: 'img/slide3.png' }),
+            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'koala', src: 'img/slide3.png' }),
             _react2.default.createElement(
               'h3',
               null,
@@ -47549,7 +47545,7 @@ var Landing = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.CarouselItem,
             null,
-            _react2.default.createElement('img', { width: 1024, height: 500, alt: 'rabbit', src: 'img/slide2.png' }),
+            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'lamb', src: 'img/slide2.png' }),
             _react2.default.createElement(
               'h3',
               null,
@@ -47559,7 +47555,7 @@ var Landing = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.CarouselItem,
             null,
-            _react2.default.createElement('img', { width: 1024, height: 500, alt: 'rabbit', src: 'img/slide4.png' }),
+            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'doll', src: 'img/slide4.png' }),
             _react2.default.createElement(
               'h3',
               null,
@@ -47569,7 +47565,7 @@ var Landing = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.CarouselItem,
             null,
-            _react2.default.createElement('img', { width: 1024, height: 500, alt: 'rabbit', src: 'img/slide1.png' }),
+            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'cat', src: 'img/slide1.png' }),
             _react2.default.createElement(
               'h3',
               null,

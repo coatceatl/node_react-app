@@ -3,6 +3,11 @@
   height: 150px;
   padding: 20px;
   border-color: #e7e7e7;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -13,21 +18,23 @@ a {
 }
 
 .navbar-brand {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   color: #1622dc;
-}
-
-.navbar-nav {
-  justify-content: space-between;
 }
 
 p {
   font-weight: bold;
   font-size: 22px;
+  padding: 15px;
 }
 
 .signin {
-  font-size: 16px;
+  font-size: 22px;
   align-content: right;
+  padding: 15px;
+}
+
+li {
+  padding: 15px;
 }
