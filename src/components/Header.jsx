@@ -3,12 +3,10 @@ import { connect } from 'react-redux';
 import './Header.css';
 
 import {
-  Navbar,
-  NavItem,
-  NavDropdown,
   Nav,
-  MenuItem
-} from 'react-bootstrap';
+  Navbar,
+  NavItem
+  } from 'react-bootstrap';
 
 class Header extends Component {
   renderContent() {
@@ -26,22 +24,23 @@ class Header extends Component {
 
   render () {
     return (
-      <Navbar className='app-navbar'>
-        <Navbar.Header className='app-header'>
-          <Navbar.Brand className='app-brand'>
-            <a href="#home">Funny Toys Amigurumi</a>
-          </Navbar.Brand>
-        </Navbar.Header>
-        <Nav>
-          <h1>
-            Get something special for that someone special
-          </h1>
-        </Nav>
-
-        <Nav pullRight className='nav-item'>
-            {this.renderContent()}
-        </Nav>
-      </Navbar>
+      <div>
+        <Navbar>
+          <Navbar.Header>
+            <Navbar.Brand>
+              <a href="#home">Funny Toys Amigurumi</a>
+            </Navbar.Brand>
+          </Navbar.Header>
+          <Nav>
+            <NavItem>
+              Get something special for that someone special
+            </NavItem>
+            <NavItem>
+              {this.renderContent()}
+            </NavItem>
+          </Nav>
+        </Navbar>
+      </div>
     );
   }
 }
