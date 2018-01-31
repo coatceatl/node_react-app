@@ -35469,7 +35469,7 @@ exports = module.exports = __webpack_require__(265)(false);
 
 
 // module
-exports.push([module.i, ".navbar {\n  background-color: #ef8702;\n  height: 150px;\n  padding: 20px;\n  border-color: #e7e7e7;\n}\n\n.container {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  display: flex;\n  justify-content: space-between;\n}\n\na {\n  color:white;\n  font-size: 16px;\n}\n\n.navbar-brand {\n  font-size: 22px;\n  font-weight: bold;\n  color: #1622dc;\n}\n\np {\n  font-weight: bold;\n  font-size: 22px;\n  padding: 15px;\n}\n\n.signin {\n  font-size: 22px;\n  align-content: right;\n  padding: 15px;\n}\n\nli {\n  padding: 15px;\n}\n", ""]);
+exports.push([module.i, ".navbar {\n  background-color: #efeded;\n  height: 100px;\n  padding: 20px;\n  border-color: #e7e7e7;\n}\n\n.container {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  display: flex;\n  justify-content: space-between;\n}\n\na {\n  color:black;\n  font-size: 16px;\n}\n\np {\n  font-weight: bold;\n  font-size: 22px;\n  padding: 15px;\n}\n\n.signin {\n  font-size: 22px;\n  align-content: right;\n  padding: 15px;\n}\n\nli {\n  padding: 15px;\n}\n", ""]);
 
 // exports
 
@@ -47535,7 +47535,7 @@ var Landing = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.CarouselItem,
             null,
-            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'koala', src: 'img/slide_koala1.png' }),
+            _react2.default.createElement('img', { width: 1840, height: 600, alt: 'koala', src: 'img/slide_koala1.png' }),
             _react2.default.createElement(
               'h3',
               null,
@@ -47545,7 +47545,7 @@ var Landing = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.CarouselItem,
             null,
-            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'lamb', src: 'img/slide_lamb.png' }),
+            _react2.default.createElement('img', { width: 1840, height: 600, alt: 'lamb', src: 'img/slide_lamb.png' }),
             _react2.default.createElement(
               'h3',
               null,
@@ -47555,7 +47555,7 @@ var Landing = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.CarouselItem,
             null,
-            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'doll', src: 'img/slide_doll1.png' }),
+            _react2.default.createElement('img', { width: 1840, height: 600, alt: 'doll', src: 'img/slide_doll1.png' }),
             _react2.default.createElement(
               'h3',
               null,
@@ -47565,7 +47565,7 @@ var Landing = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.CarouselItem,
             null,
-            _react2.default.createElement('img', { width: 1024, height: 600, alt: 'cat', src: 'img/slide_cat.png' }),
+            _react2.default.createElement('img', { width: 1840, height: 600, alt: 'cat', src: 'img/slide_cat.png' }),
             _react2.default.createElement(
               'h3',
               null,
@@ -47688,32 +47688,40 @@ var Footer = function (_Component) {
               _reactBootstrap.Col,
               { xs: 6, md: 4 },
               _react2.default.createElement(
-                'h4',
-                null,
-                'Instagram'
+                'a',
+                { href: 'https://www.instagram.com/funny_toys_amiguru/' },
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Follow on Instagram'
+                )
               )
             ),
             _react2.default.createElement(
               _reactBootstrap.Col,
               { xs: 6, md: 4 },
               _react2.default.createElement(
-                'h4',
-                null,
-                'Facebook'
+                'a',
+                { href: 'https://www.facebook.com/FunnyAmiguru/' },
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Like on Facebook'
+                )
               )
             ),
             _react2.default.createElement(
               _reactBootstrap.Col,
               { xs: 6, md: 4 },
               _react2.default.createElement(
-                'h4',
-                null,
-                'Logo'
+                'a',
+                { href: '#home' },
+                _react2.default.createElement('img', { className: 'logo', width: 100, height: 100, src: 'img/Logo_blue1.png' })
               ),
               _react2.default.createElement(
                 'h6',
                 null,
-                'Copyright 2018'
+                'Copyright \xA9 2018'
               )
             )
           )

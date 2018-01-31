@@ -1,6 +1,6 @@
 .navbar {
-  background-color: #ef8702;
-  height: 150px;
+  background-color: #efeded;
+  height: 100px;
   padding: 20px;
   border-color: #e7e7e7;
 }
@@ -13,14 +13,8 @@
 }
 
 a {
-  color:white;
+  color:black;
   font-size: 16px;
-}
-
-.navbar-brand {
-  font-size: 22px;
-  font-weight: bold;
-  color: #1622dc;
 }
 
 p {

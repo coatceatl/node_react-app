@@ -1,6 +1,7 @@
 .carousel-inner {
   padding: 15px;
   display: flex;
+  flex-wrap: wrap;
   max-width: none !important;
   min-width: 100%;
   position: absolute;
