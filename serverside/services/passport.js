@@ -1,8 +1,8 @@
-const passport = require('passport');
-const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const passport         = require('passport');
+const GoogleStrategy   = require('passport-google-oauth20').Strategy;
 const FacebookStrategy = require('passport-facebook').Strategy;
-const mongoose = require('mongoose');
-const keys = require('../config/keys.js');
+const mongoose         = require('mongoose');
+const keys             = require('../config/keys.js');
 
 const User = mongoose.model('users');
 
@@ -20,8 +20,8 @@ passport.deserializeUser((id, done) =>{
 passport.use(
   new GoogleStrategy(
     {
-    clientID: keys.googleClientID,
-    clientSecret: keys.googleClientSecret,
+    clientID: keys.googleAuth.clientID,
+    clientSecret: keys.googleAuth.clientSecret,
     callbackURL: '/auth/google/callback'
     },
     async (accessToken, refreshToken, profile, done) => {
@@ -33,14 +33,24 @@ passport.use(
         done(null, user);
       }
     }
-  ),
+  )
+);
+
+passport.use(
   new FacebookStrategy(
     {
-      clientID: keys.facebookClientID,
-      clientSecret: keys.facebookClientSecret,
+      clientID: keys.facebookAuth.clientID,
+      clientSecret: keys.facebookAuth.clientSecret,
       callbackURL: '/auth/facebook/callback'
-    }, (accessToken) => {
-      console.log(accessToken);
+    },
+    async (accessToken, refreshToken, profile, done) => {
+      const existingUser = await User.findOne({ facebookId: profile.id })
+      if (existingUser) {
+        done(null, existingUser);
+      } else {
+        const user = await new User({ facebookId: profile.id }).save()
+        done(null, user);
+      }
     }
   )
 );
