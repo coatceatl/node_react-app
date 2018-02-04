@@ -35348,12 +35348,25 @@ var Header = function (_Component) {
           return 'Loading...';
         case false:
           return _react2.default.createElement(
-            'li',
+            'ul',
             null,
             _react2.default.createElement(
-              'a',
-              { href: '/auth/google' },
-              'Sign with Google'
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: '/auth/google' },
+                'Sign with Google'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: '/auth/facebook' },
+                'Sign with Facebook'
+              )
             )
           );
         default:
@@ -35469,7 +35482,7 @@ exports = module.exports = __webpack_require__(265)(false);
 
 
 // module
-exports.push([module.i, ".navbar {\n  background-color: #efeded;\n  height: 100px;\n  padding: 20px;\n  border-color: #e7e7e7;\n}\n\n.container {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  display: flex;\n  justify-content: space-between;\n}\n\na {\n  color:black;\n  font-size: 16px;\n}\n\np {\n  font-weight: bold;\n  font-size: 22px;\n  padding: 15px;\n}\n\n.signin {\n  font-size: 22px;\n  align-content: right;\n  padding: 15px;\n}\n\nli {\n  padding: 15px;\n}\n", ""]);
+exports.push([module.i, ".navbar {\n  background-color: #efeded;\n  height: 100px;\n  padding: 20px;\n  border-color: #e7e7e7;\n}\n\n.container {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  display: flex;\n  justify-content: space-between;\n}\n\na {\n  color:black;\n  font-size: 16px;\n}\n\np {\n  font-weight: bold;\n  font-size: 22px;\n  padding: 15px;\n}\n\n.signin {\n  font-size: 18px;\n  align-content: right;\n  padding: 10px;\n}\n\nli {\n  padding: 5px;\n}\n", ""]);
 
 // exports
 

@@ -15,7 +15,10 @@ class Header extends Component {
         return 'Loading...';
       case false:
         return (
-          <li><a href='/auth/google'>Sign with Google</a></li>
+          <ul>
+            <li><a href='/auth/google'>Sign with Google</a></li>
+            <li><a href='/auth/facebook'>Sign with Facebook</a></li>
+          </ul>
         );
       default:
         return <li><a href='/api/logout'>Logout</a></li>;
