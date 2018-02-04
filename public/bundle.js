@@ -35407,11 +35407,6 @@ var Header = function (_Component) {
               ),
               _react2.default.createElement(
                 'div',
-                { className: 'nav-fill' },
-                'Get something special for that someone special'
-              ),
-              _react2.default.createElement(
-                'div',
                 { className: 'nav-right' },
                 _react2.default.createElement(
                   'div',
@@ -35427,6 +35422,11 @@ var Header = function (_Component) {
                     'Cart'
                   )
                 )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'nav-fill' },
+                'Get something special for that someone special'
               )
             ),
             _react2.default.createElement(
@@ -35587,7 +35587,7 @@ exports = module.exports = __webpack_require__(265)(false);
 
 
 // module
-exports.push([module.i, ".navbar {\n  background-color: #efeded;\n  height: 100px;\n  padding: 20px;\n  border-color: #e7e7e7;\n}\n\n.container {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  display: flex;\n  justify-content: space-between;\n}\n\na {\n  color:black;\n  font-size: 16px;\n}\n\np {\n  font-weight: bold;\n  font-size: 22px;\n  padding: 15px;\n}\n\n.signin {\n  font-size: 18px;\n  align-content: right;\n  padding: 10px;\n}\n\nli {\n  padding: 5px;\n}\n", ""]);
+exports.push([module.i, "#nav-main {\n  width: 100%;\n  height: 100px;\n  position: relative;\n  justify-content: space-between;\n}\n\n.nav-left {\n  position: relative;\n  float: left;\n}\n\n.nav-right {\n  position: relative;\n  float: right;\n  width: auto;\n}\n\n.nav-fill {\n  width: auto;\n  font-size: 30px;\n  text-align: center;\n}\n\n#nav-subnav {\n  position: relative;\n  display: flex;\n  justify-content: space-between;\n  height: 50px;\n  padding: 0 9px 0 15px;\n}\n\n#navbar {\n  position: relative;\n  background-color: #efeded;\n  height: 100px;\n  border-color: #e7e7e7;\n}\n\n.container {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  display: flex;\n  justify-content: space-between;\n  width: 350px;\n}\n\na {\n  color:black;\n  font-size: 16px;\n}\n\np {\n  font-weight: bold;\n  font-size: 22px;\n  padding: 15px;\n}\n\n.signin {\n  font-size: 18px;\n  align-content: right;\n  padding: 10px;\n}\n\nli {\n  padding: 5px;\n}\n", ""]);
 
 // exports
 

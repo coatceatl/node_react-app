@@ -34,14 +34,14 @@ class Header extends Component {
               <div className='nav-left'>
                 <a href='#home'><img className='logo' width={100} height={100} src='img/Logo_blue1.png' /></a>
               </div>
-              <div className='nav-fill'>Get something special for that someone special</div>
               <div className='nav-right'>
                 <div className='container'>
                   <a href='#'>{this.renderContent()}</a>
                   <a href='#'>Cart</a>
                 </div>
               </div>
-            </div>
+              <div className='nav-fill'>Get something special for that someone special</div>
+              </div>
             <div id='nav-subnav'>
               <a href='#'><span className='nav-content'>CATS</span></a>
               <a href='#'><span className='nav-content'>RABBITS</span></a>
