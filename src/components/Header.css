@@ -24,11 +24,11 @@ p {
 }
 
 .signin {
-  font-size: 22px;
+  font-size: 18px;
   align-content: right;
-  padding: 15px;
+  padding: 10px;
 }
 
 li {
-  padding: 15px;
+  padding: 5px;
 }
