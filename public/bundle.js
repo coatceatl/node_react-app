@@ -35388,29 +35388,134 @@ var Header = function (_Component) {
         'div',
         null,
         _react2.default.createElement(
-          _reactBootstrap.Navbar,
+          'header',
           null,
           _react2.default.createElement(
-            _reactBootstrap.Navbar.Header,
-            null,
+            'div',
+            { id: 'navbar' },
             _react2.default.createElement(
-              _reactBootstrap.Navbar.Brand,
-              null,
+              'div',
+              { id: 'nav-main' },
+              _react2.default.createElement(
+                'div',
+                { className: 'nav-left' },
+                _react2.default.createElement(
+                  'a',
+                  { href: '#home' },
+                  _react2.default.createElement('img', { className: 'logo', width: 100, height: 100, src: 'img/Logo_blue1.png' })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'nav-fill' },
+                'Get something special for that someone special'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'nav-right' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'container' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    this.renderContent()
+                  ),
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    'Cart'
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { id: 'nav-subnav' },
               _react2.default.createElement(
                 'a',
-                { href: '#home' },
-                'Funny Toys Amigurumi'
+                { href: '#' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'nav-content' },
+                  'CATS'
+                )
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'nav-content' },
+                  'RABBITS'
+                )
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'nav-content' },
+                  'DOLLS'
+                )
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'nav-content' },
+                  'FOXES'
+                )
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'nav-content' },
+                  'LAMBS'
+                )
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'nav-content' },
+                  'KOALAS'
+                )
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'nav-content' },
+                  'CARTOON CHARACTERS'
+                )
               )
             )
-          ),
-          _react2.default.createElement(
-            'p',
-            { className: 'NavbarText' },
-            'Get something special for that someone special'
-          ),
-          this.renderContent()
+          )
         )
-      );
+      )
+
+      /*
+      <Navbar>
+      <Navbar.Header>
+      <Navbar.Brand>
+        <a href="#home">Funny Toys Amigurumi</a>
+      </Navbar.Brand>
+      </Navbar.Header>
+      <p className='NavbarText'>
+      Get something special for that someone special
+      </p>
+      {this.renderContent()}
+      </Navbar>
+      </div>
+      */
+
+      ;
     }
   }]);
 

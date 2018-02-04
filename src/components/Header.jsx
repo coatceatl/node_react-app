@@ -28,6 +28,35 @@ class Header extends Component {
   render () {
     return (
       <div>
+        <header>
+          <div id='navbar'>
+            <div id='nav-main'>
+              <div className='nav-left'>
+                <a href='#home'><img className='logo' width={100} height={100} src='img/Logo_blue1.png' /></a>
+              </div>
+              <div className='nav-fill'>Get something special for that someone special</div>
+              <div className='nav-right'>
+                <div className='container'>
+                  <a href='#'>{this.renderContent()}</a>
+                  <a href='#'>Cart</a>
+                </div>
+              </div>
+            </div>
+            <div id='nav-subnav'>
+              <a href='#'><span className='nav-content'>CATS</span></a>
+              <a href='#'><span className='nav-content'>RABBITS</span></a>
+              <a href='#'><span className='nav-content'>DOLLS</span></a>
+              <a href='#'><span className='nav-content'>FOXES</span></a>
+              <a href='#'><span className='nav-content'>LAMBS</span></a>
+              <a href='#'><span className='nav-content'>KOALAS</span></a>
+              <a href='#'><span className='nav-content'>CARTOON CHARACTERS</span></a>
+            </div>
+          </div>
+        </header>
+      </div>
+
+            /*
+
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
@@ -40,6 +69,9 @@ class Header extends Component {
           {this.renderContent()}
         </Navbar>
       </div>
+
+*/
+
     );
   }
 }
