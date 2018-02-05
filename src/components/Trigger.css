@@ -1,0 +1,19 @@
+.modal-container {
+  position: relative;
+}
+
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
+
+.modal-content {
+  width: 350px;
+  height: 350px;
+}
+
+.modal-body {
+  display: table-caption;
+}
+button {
+  font-size: large;
+}

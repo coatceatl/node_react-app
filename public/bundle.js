@@ -35355,15 +35355,7 @@ var Header = function (_Component) {
             'div',
             null,
             _react2.default.createElement(_Trigger2.default, null)
-          )
-          /*
-          <ul>
-            <li><a href='/auth/google'>Sign with Google</a></li>
-            <li><a href='/auth/facebook'>Sign with Facebook</a></li>
-          </ul>
-          */
-
-          ;
+          );
         default:
           return _react2.default.createElement(
             'li',
@@ -35613,12 +35605,20 @@ var Trigger = function (_Component) {
             _react2.default.createElement(
               _reactBootstrap.Button,
               { bsStyle: 'primary' },
-              'Sign in with Facebook'
+              _react2.default.createElement(
+                'a',
+                { href: '/auth/facebook' },
+                'Sign in with Facebook'
+              )
             ),
             _react2.default.createElement(
               _reactBootstrap.Button,
               { bsStyle: 'danger' },
-              'Sign in with Google'
+              _react2.default.createElement(
+                'a',
+                { href: '/auth/google' },
+                'Sign with Google'
+              )
             )
           ),
           _react2.default.createElement(
