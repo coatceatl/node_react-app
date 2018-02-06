@@ -22,7 +22,6 @@ class Footer extends Component {
               </a>
             </Col>
             <Col xs={6} md={4}>
-              <a href='#home'><img className='logo' width={100} height={100} src='img/Logo_blue1.png' /></a>
               <h6>Copyright © 2018</h6>
             </Col>
           </Row>

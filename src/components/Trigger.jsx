@@ -43,10 +43,12 @@ class Trigger extends Component {
           </Modal.Header>
           <Modal.Body>
             <Button bsStyle="primary"><a href='/auth/facebook'>Sign in with Facebook</a></Button>
-            <Button bsStyle="danger"><a href='/auth/google'>Sign with Google</a></Button>
+            <Button bsStyle="danger"><a href='/auth/google'>Sign in with Google</a></Button>
           </Modal.Body>
           <Modal.Footer>
-            <Button onClick={this.handleHide}>Close</Button>
+            <p>© 2018
+              <Button onClick={this.handleHide}>Close</Button>
+            </p>
           </Modal.Footer>
         </Modal>
       </div>

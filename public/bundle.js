@@ -35617,7 +35617,7 @@ var Trigger = function (_Component) {
               _react2.default.createElement(
                 'a',
                 { href: '/auth/google' },
-                'Sign with Google'
+                'Sign in with Google'
               )
             )
           ),
@@ -35625,9 +35625,14 @@ var Trigger = function (_Component) {
             _reactBootstrap.Modal.Footer,
             null,
             _react2.default.createElement(
-              _reactBootstrap.Button,
-              { onClick: this.handleHide },
-              'Close'
+              'p',
+              null,
+              '\xA9 2018',
+              _react2.default.createElement(
+                _reactBootstrap.Button,
+                { onClick: this.handleHide },
+                'Close'
+              )
             )
           )
         )
@@ -47943,11 +47948,6 @@ var Footer = function (_Component) {
             _react2.default.createElement(
               _reactBootstrap.Col,
               { xs: 6, md: 4 },
-              _react2.default.createElement(
-                'a',
-                { href: '#home' },
-                _react2.default.createElement('img', { className: 'logo', width: 100, height: 100, src: 'img/Logo_blue1.png' })
-              ),
               _react2.default.createElement(
                 'h6',
                 null,
