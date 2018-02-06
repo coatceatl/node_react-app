@@ -14,6 +14,13 @@
   position: relative;
   float: right;
   width: auto;
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 20px;
+}
+
+a .container .nav-right {
+  width: 70px;
 }
 
 .nav-fill {

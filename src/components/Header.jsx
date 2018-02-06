@@ -37,6 +37,7 @@ class Header extends Component {
               <div className='nav-right'>
                 <div className='container'>
                   <a href='#'>{this.renderContent()}</a>
+                  <a href='#'>Orders</a>
                   <a href='#'>Cart</a>
                 </div>
               </div>
