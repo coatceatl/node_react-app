@@ -16,7 +16,6 @@
   width: auto;
   display: inline-block;
   vertical-align: bottom;
-  margin: 20px;
 }
 
 a .container .nav-right {
@@ -32,12 +31,9 @@ a .container .nav-right {
 }
 
 #nav-subnav {
-  display: flex;
-  justify-content: space-between;
   height: 50px;
   text-align: center;
-  vertical-align: middle;
-  padding: 0 9px 0 15px;
+  background-color:darkgray;
 }
 
 #navbar {
@@ -63,6 +59,8 @@ a {
 .nav-content {
   padding: 5px;
   height: 48px;
+  display: inline-block;
+  width: 20%;
 }
 
 li {

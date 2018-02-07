@@ -12,8 +12,14 @@
 }
 
 .modal-body {
-  display: table-caption;
+  float: none;
 }
+
 button {
   font-size: large;
+}
+
+.btn {
+  display: block;
+  width: 185p
 }

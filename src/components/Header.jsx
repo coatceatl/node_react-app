@@ -44,12 +44,9 @@ class Header extends Component {
               <div className='nav-fill'>Get something special for that someone special</div>
               </div>
             <div id='nav-subnav'>
-              <a href='#'><span className='nav-content'>CATS</span></a>
-              <a href='#'><span className='nav-content'>RABBITS</span></a>
+              <a href='#'><span className='nav-content'>ANIMALS</span></a>
               <a href='#'><span className='nav-content'>DOLLS</span></a>
-              <a href='#'><span className='nav-content'>FOXES</span></a>
-              <a href='#'><span className='nav-content'>LAMBS</span></a>
-              <a href='#'><span className='nav-content'>KOALAS</span></a>
+              <a href='#'><span className='nav-content'>MYTHICAL ANIMALS</span></a>
               <a href='#'><span className='nav-content'>CARTOON CHARACTERS</span></a>
             </div>
           </div>
