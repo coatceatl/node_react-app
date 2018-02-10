@@ -34,6 +34,7 @@ a .container .nav-right {
   height: 50px;
   text-align: center;
   background-color:darkgray;
+  padding-top: 10px;
 }
 
 #navbar {

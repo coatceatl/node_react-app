@@ -52,24 +52,6 @@ class Header extends Component {
           </div>
         </header>
       </div>
-
-            /*
-
-        <Navbar>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <a href="#home">Funny Toys Amigurumi</a>
-            </Navbar.Brand>
-          </Navbar.Header>
-          <p className='NavbarText'>
-            Get something special for that someone special
-          </p>
-          {this.renderContent()}
-        </Navbar>
-      </div>
-
-*/
-
     );
   }
 }

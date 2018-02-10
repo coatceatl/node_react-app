@@ -8,9 +8,11 @@ import {
 class Footer extends Component {
   render () {
     return (
-      <div className='container'>
         <Grid>
-          <Row className='show-grid'>
+          <Row className="show-grid">
+            <Col xs={6} md={4}>
+              <a href='#home'><img className='logo' width={100} height={100} src='img/Logo_blue1.png' /></a>
+            </Col>
             <Col xs={6} md={4}>
               <a href='https://www.instagram.com/funny_toys_amiguru/'>
                 <h4>Follow on Instagram</h4>
@@ -26,7 +28,6 @@ class Footer extends Component {
             </Col>
           </Row>
         </Grid>
-      </div>
     );
   }
 }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {
   Button,
-  Modal
+  Modal,
+  ButtonGroup
   } from 'react-bootstrap';
 
 
@@ -23,7 +24,7 @@ class Trigger extends Component {
     return (
       <div className='modal-container' style={{ height: 200 }}>
         <Button
-          bsStyle='primary'
+          bsStyle='link'
           bsSize='large'
           onClick={() => this.setState({ show: true })}
         >
@@ -42,14 +43,11 @@ class Trigger extends Component {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Button bsStyle="primary"><a href='/auth/facebook'>Sign in with Facebook</a></Button>
-            <Button bsStyle="danger"><a href='/auth/google'>Sign in with Google</a></Button>
+            <ButtonGroup vertical>
+              <Button bsStyle="primary"><a href='/auth/facebook'>Sign in with Facebook</a></Button>
+              <Button bsStyle="danger"><a href='/auth/google'>Sign in with Google</a></Button>
+            </ButtonGroup>
           </Modal.Body>
-          <Modal.Footer>
-            <p>© 2018
-              <Button onClick={this.handleHide}>Close</Button>
-            </p>
-          </Modal.Footer>
         </Modal>
       </div>
     );

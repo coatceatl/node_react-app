@@ -7,7 +7,7 @@
 }
 
 .modal-content {
-  width: 350px;
+  width: 200px;
   height: 350px;
 }
 
@@ -15,11 +15,12 @@
   float: none;
 }
 
-button {
-  font-size: large;
-}
-
 .btn {
   display: block;
-  width: 185p
+  width: 185px;
+}
+
+button {
+  padding: 0px;
+  color: black;
 }
