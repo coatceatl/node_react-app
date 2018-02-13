@@ -17,7 +17,7 @@ class Landing extends Component {
             <Col xs={6} md={4}>
               <Thumbnail src='img/cat_mint.jpg' alt='Mint cat'>
                 <h3>MINT CAT</h3>
-                <p>Description</p>
+                <p>Price</p>
                 <p>
                   <Button bsStyle="primary">Add to Cart</Button>&nbsp;
                   <Button bsStyle="default">Add to List</Button>
@@ -25,29 +25,27 @@ class Landing extends Component {
               </Thumbnail>
             </Col>
             <Col xs={6} md={4}>
-              <Thumbnail src='img/doll_violet.jpg' alt='Mint cat'>
-                <h3>VIOLET DOLL</h3>
-                <p>Description</p>
-                <p>
-                  <Button bsStyle="primary">Add to Cart</Button>&nbsp;
-                  <Button bsStyle="default">Add to List</Button>
-                </p>
+              <Thumbnail src='img/doll_violet.jpg' alt='Violet doll'>
+              <h3>VIOLET DOLL</h3>
+              <p>Price</p>
+              <p>
+                <Button bsStyle="primary">Add to Cart</Button>&nbsp;
+                <Button bsStyle="default">Add to List</Button>
+              </p>
               </Thumbnail>
             </Col>
             <Col xs={6} md={4}>
-              <Thumbnail src='img/fox.jpg' alt='Mint cat'>
-                <h3>SLEEPY FOX</h3>
-                <p>Description</p>
-                <p>
-                  <Button bsStyle="primary">Add to Cart</Button>&nbsp;
-                  <Button bsStyle="default">Add to List</Button>
-                </p>
+              <Thumbnail src='img/fox.jpg' alt='Sleepy fox'>
+              <h3>SLEEPY FOX</h3>
+              <p>Price</p>
+              <p>
+                <Button bsStyle="primary">Add to Cart</Button>&nbsp;
+                <Button bsStyle="default">Add to List</Button>
+              </p>
               </Thumbnail>
             </Col>
-
-
           </Row>
-        </Grid>;
+        </Grid>
 
         {/*
         <Carousel>

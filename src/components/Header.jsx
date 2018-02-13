@@ -35,10 +35,8 @@ class Header extends Component {
                 <a href='#home'><img className='logo' width={100} height={100} src='img/Logo_blue1.png' /></a>
               </div>
               <div className='nav-right'>
-                <div className='container'>
+                <div className='signin'>
                   <a href='#'>{this.renderContent()}</a>
-                  <a href='#'>Orders</a>
-                  <a href='#'>Cart</a>
                 </div>
               </div>
               <div className='nav-fill'>Get something special for that someone special</div>
@@ -46,7 +44,6 @@ class Header extends Component {
             <div id='nav-subnav'>
               <a href='#'><span className='nav-content'>ANIMALS</span></a>
               <a href='#'><span className='nav-content'>DOLLS</span></a>
-              <a href='#'><span className='nav-content'>MYTHICAL ANIMALS</span></a>
               <a href='#'><span className='nav-content'>CARTOON CHARACTERS</span></a>
             </div>
           </div>

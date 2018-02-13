@@ -12,6 +12,7 @@ class Footer extends Component {
           <Row className="show-grid">
             <Col xs={6} md={4}>
               <a href='#home'><img className='logo' width={100} height={100} src='img/Logo_blue1.png' /></a>
+              <h6>Copyright © 2018</h6>
             </Col>
             <Col xs={6} md={4}>
               <a href='https://www.instagram.com/funny_toys_amiguru/'>
@@ -22,9 +23,6 @@ class Footer extends Component {
               <a href='https://www.facebook.com/FunnyAmiguru/'>
                 <h4>Like on Facebook</h4>
               </a>
-            </Col>
-            <Col xs={6} md={4}>
-              <h6>Copyright © 2018</h6>
             </Col>
           </Row>
         </Grid>

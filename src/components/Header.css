@@ -44,12 +44,13 @@ a .container .nav-right {
   border-color: #e7e7e7;
 }
 
-.container {
+.signin {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   width: 350px;
+  height: 150px;
 }
 
 a {

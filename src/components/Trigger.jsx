@@ -24,7 +24,7 @@ class Trigger extends Component {
     return (
       <div className='modal-container' style={{ height: 200 }}>
         <Button
-          bsStyle='link'
+          bsStyle='primary'
           bsSize='large'
           onClick={() => this.setState({ show: true })}
         >

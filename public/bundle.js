@@ -35397,21 +35397,11 @@ var Header = function (_Component) {
                 { className: 'nav-right' },
                 _react2.default.createElement(
                   'div',
-                  { className: 'container' },
+                  { className: 'signin' },
                   _react2.default.createElement(
                     'a',
                     { href: '#' },
                     this.renderContent()
-                  ),
-                  _react2.default.createElement(
-                    'a',
-                    { href: '#' },
-                    'Orders'
-                  ),
-                  _react2.default.createElement(
-                    'a',
-                    { href: '#' },
-                    'Cart'
                   )
                 )
               ),
@@ -35440,15 +35430,6 @@ var Header = function (_Component) {
                   'span',
                   { className: 'nav-content' },
                   'DOLLS'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'nav-content' },
-                  'MYTHICAL ANIMALS'
                 )
               ),
               _react2.default.createElement(
@@ -35535,7 +35516,7 @@ var Trigger = function (_Component) {
         _react2.default.createElement(
           _reactBootstrap.Button,
           {
-            bsStyle: 'link',
+            bsStyle: 'primary',
             bsSize: 'large',
             onClick: function onClick() {
               return _this2.setState({ show: true });
@@ -47109,7 +47090,7 @@ exports = module.exports = __webpack_require__(412)(false);
 
 
 // module
-exports.push([module.i, "#nav-main {\n  width: 100%;\n  height: 100px;\n  position: relative;\n  justify-content: space-between;\n}\n\n.nav-left {\n  position: relative;\n  float: left;\n}\n\n.nav-right {\n  position: relative;\n  float: right;\n  width: auto;\n  display: inline-block;\n  vertical-align: bottom;\n}\n\na .container .nav-right {\n  width: 70px;\n}\n\n.nav-fill {\n  width: auto;\n  font-size: 30px;\n  font-weight: bold;\n  text-align: center;\n  padding-top: 20px;\n}\n\n#nav-subnav {\n  height: 50px;\n  text-align: center;\n  background-color:darkgray;\n  padding-top: 10px;\n}\n\n#navbar {\n  position: relative;\n  background-color: #efeded;\n  height: 150px;\n  border-color: #e7e7e7;\n}\n\n.container {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  display: flex;\n  justify-content: space-between;\n  width: 350px;\n}\n\na {\n  color:black;\n  font-size: 16px;\n}\n\n.nav-content {\n  padding: 5px;\n  height: 48px;\n  display: inline-block;\n  width: 20%;\n}\n\nli {\n  padding: 5px;\n}\n", ""]);
+exports.push([module.i, "#nav-main {\n  width: 100%;\n  height: 100px;\n  position: relative;\n  justify-content: space-between;\n}\n\n.nav-left {\n  position: relative;\n  float: left;\n}\n\n.nav-right {\n  position: relative;\n  float: right;\n  width: auto;\n  display: inline-block;\n  vertical-align: bottom;\n}\n\na .container .nav-right {\n  width: 70px;\n}\n\n.nav-fill {\n  width: auto;\n  font-size: 30px;\n  font-weight: bold;\n  text-align: center;\n  padding-top: 20px;\n}\n\n#nav-subnav {\n  height: 50px;\n  text-align: center;\n  background-color:darkgray;\n  padding-top: 10px;\n}\n\n#navbar {\n  position: relative;\n  background-color: #efeded;\n  height: 150px;\n  border-color: #e7e7e7;\n}\n\n.signin {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  display: flex;\n  justify-content: space-between;\n  width: 350px;\n  height: 150px;\n}\n\na {\n  color:black;\n  font-size: 16px;\n}\n\n.nav-content {\n  padding: 5px;\n  height: 48px;\n  display: inline-block;\n  width: 20%;\n}\n\nli {\n  padding: 5px;\n}\n", ""]);
 
 // exports
 
@@ -47735,7 +47716,7 @@ var Landing = function (_Component) {
                 _react2.default.createElement(
                   'p',
                   null,
-                  'Description'
+                  'Price'
                 ),
                 _react2.default.createElement(
                   'p',
@@ -47759,7 +47740,7 @@ var Landing = function (_Component) {
               { xs: 6, md: 4 },
               _react2.default.createElement(
                 _reactBootstrap.Thumbnail,
-                { src: 'img/doll_violet.jpg', alt: 'Mint cat' },
+                { src: 'img/doll_violet.jpg', alt: 'Violet doll' },
                 _react2.default.createElement(
                   'h3',
                   null,
@@ -47768,7 +47749,7 @@ var Landing = function (_Component) {
                 _react2.default.createElement(
                   'p',
                   null,
-                  'Description'
+                  'Price'
                 ),
                 _react2.default.createElement(
                   'p',
@@ -47792,7 +47773,7 @@ var Landing = function (_Component) {
               { xs: 6, md: 4 },
               _react2.default.createElement(
                 _reactBootstrap.Thumbnail,
-                { src: 'img/fox.jpg', alt: 'Mint cat' },
+                { src: 'img/fox.jpg', alt: 'Sleepy fox' },
                 _react2.default.createElement(
                   'h3',
                   null,
@@ -47801,7 +47782,7 @@ var Landing = function (_Component) {
                 _react2.default.createElement(
                   'p',
                   null,
-                  'Description'
+                  'Price'
                 ),
                 _react2.default.createElement(
                   'p',
@@ -47821,8 +47802,7 @@ var Landing = function (_Component) {
               )
             )
           )
-        ),
-        ';'
+        )
       );
     }
   }]);
@@ -47938,6 +47918,11 @@ var Footer = function (_Component) {
               'a',
               { href: '#home' },
               _react2.default.createElement('img', { className: 'logo', width: 100, height: 100, src: 'img/Logo_blue1.png' })
+            ),
+            _react2.default.createElement(
+              'h6',
+              null,
+              'Copyright \xA9 2018'
             )
           ),
           _react2.default.createElement(
@@ -47964,15 +47949,6 @@ var Footer = function (_Component) {
                 null,
                 'Like on Facebook'
               )
-            )
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Col,
-            { xs: 6, md: 4 },
-            _react2.default.createElement(
-              'h6',
-              null,
-              'Copyright \xA9 2018'
             )
           )
         )
