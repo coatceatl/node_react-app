@@ -47,6 +47,7 @@ a .container .nav-right {
 .signin {
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 10px;
   display: flex;
   justify-content: space-between;
   width: 350px;
@@ -67,4 +68,14 @@ a {
 
 li {
   padding: 5px;
+}
+
+.glyphicon {
+  padding-bottom: 90px;
+  color: black;
+}
+
+.btn {
+  padding: 0px;
+  color: black;
 }
