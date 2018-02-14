@@ -47931,16 +47931,7 @@ var Footer = function (_Component) {
           _react2.default.createElement(
             _reactBootstrap.Col,
             { xs: 6, md: 4 },
-            _react2.default.createElement(
-              'a',
-              { href: '#home' },
-              _react2.default.createElement('img', { className: 'logo', width: 100, height: 100, src: 'img/Logo_blue1.png' })
-            ),
-            _react2.default.createElement(
-              'h6',
-              null,
-              'Copyright \xA9 2018'
-            )
+            '\xA9 2018'
           ),
           _react2.default.createElement(
             _reactBootstrap.Col,
