@@ -38,11 +38,14 @@ class Header extends Component {
               </div>
               <div className='nav-right'>
                 <div className='signin'>
-                  <a href='#'>{this.renderContent()}</a>
                   <a href='#'>About</a>
+                  <Button bsStyle='link'>
+                    <Glyphicon glyph="heart-empty" /> Wishlist
+                  </Button>
                   <Button bsStyle='link'>
                     <Glyphicon glyph="shopping-cart" /> Cart
                   </Button>
+                  <a href='#'>{this.renderContent()}</a>
                 </div>
               </div>
               <div className='nav-fill'>Get something special for that someone special</div>

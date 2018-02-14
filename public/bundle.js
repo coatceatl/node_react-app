@@ -35401,18 +35401,24 @@ var Header = function (_Component) {
                   _react2.default.createElement(
                     'a',
                     { href: '#' },
-                    this.renderContent()
+                    'About'
                   ),
                   _react2.default.createElement(
-                    'a',
-                    { href: '#' },
-                    'About'
+                    _reactBootstrap.Button,
+                    { bsStyle: 'link' },
+                    _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'heart-empty' }),
+                    ' Wishlist'
                   ),
                   _react2.default.createElement(
                     _reactBootstrap.Button,
                     { bsStyle: 'link' },
                     _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'shopping-cart' }),
                     ' Cart'
+                  ),
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    this.renderContent()
                   )
                 )
               ),
