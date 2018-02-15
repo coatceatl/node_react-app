@@ -6,6 +6,7 @@ const path          = require('path');
 const bodyParser    = require('body-parser');
 const keys          = require('./serverside/config/keys');
 require('./serverside/models/User');
+require('./serverside/models/Order');
 require('./serverside/services/passport.js');
 
 mongoose.connect('mongodb://localhost:27017/users');
