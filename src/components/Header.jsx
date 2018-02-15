@@ -8,6 +8,7 @@ import {
   Navbar,
   NavItem,
   Button,
+  ButtonGroup,
   Glyphicon
 } from 'react-bootstrap';
 
@@ -23,7 +24,19 @@ class Header extends Component {
           </div>
         );
       default:
-        return <Button bsStyle='link'><a href='/api/logout'>Logout</a></Button>;
+        return [
+          <ButtonGroup>
+            <Button bsStyle='link'>
+              <Glyphicon glyph="heart-empty" /> Wishlist
+            </Button>
+            <Button bsStyle='link'>
+              <Glyphicon glyph="shoping-cart" /> Cart
+            </Button>
+            <Button bsStyle='link'>
+              <a href='/api/logout'>Logout</a>
+            </Button>
+          </ButtonGroup>
+        ];
     }
   }
 
@@ -39,12 +52,15 @@ class Header extends Component {
               <div className='nav-right'>
                 <div className='signin'>
                   <a href='#'>About</a>
+                  {/*
                   <Button bsStyle='link'>
                     <Glyphicon glyph="heart-empty" /> Wishlist
                   </Button>
                   <Button bsStyle='link'>
                     <Glyphicon glyph="shopping-cart" /> Cart
                   </Button>
+                  */}
+
                   <a href='#'>{this.renderContent()}</a>
                 </div>
               </div>

@@ -31300,14 +31300,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Orders = function Orders() {
-  return _react2.default.createElement(
-    'h1',
-    null,
-    'Orders'
-  );
-};
-
 var App = function (_Component) {
   _inherits(App, _Component);
 
@@ -31337,7 +31329,6 @@ var App = function (_Component) {
             _react2.default.createElement(_Header2.default, null),
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Landing2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/account', component: _Dashboard2.default }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/account/orders', component: Orders }),
             _react2.default.createElement(_Footer2.default, null)
           )
         )
@@ -35357,15 +35348,31 @@ var Header = function (_Component) {
             _react2.default.createElement(_Trigger2.default, null)
           );
         default:
-          return _react2.default.createElement(
-            _reactBootstrap.Button,
-            { bsStyle: 'link' },
+          return [_react2.default.createElement(
+            _reactBootstrap.ButtonGroup,
+            null,
             _react2.default.createElement(
-              'a',
-              { href: '/api/logout' },
-              'Logout'
+              _reactBootstrap.Button,
+              { bsStyle: 'link' },
+              _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'heart-empty' }),
+              ' Wishlist'
+            ),
+            _react2.default.createElement(
+              _reactBootstrap.Button,
+              { bsStyle: 'link' },
+              _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'shoping-cart' }),
+              ' Cart'
+            ),
+            _react2.default.createElement(
+              _reactBootstrap.Button,
+              { bsStyle: 'link' },
+              _react2.default.createElement(
+                'a',
+                { href: '/api/logout' },
+                'Logout'
+              )
             )
-          );
+          )];
       }
     }
   }, {
@@ -35402,18 +35409,6 @@ var Header = function (_Component) {
                     'a',
                     { href: '#' },
                     'About'
-                  ),
-                  _react2.default.createElement(
-                    _reactBootstrap.Button,
-                    { bsStyle: 'link' },
-                    _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'heart-empty' }),
-                    ' Wishlist'
-                  ),
-                  _react2.default.createElement(
-                    _reactBootstrap.Button,
-                    { bsStyle: 'link' },
-                    _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'shopping-cart' }),
-                    ' Cart'
                   ),
                   _react2.default.createElement(
                     'a',

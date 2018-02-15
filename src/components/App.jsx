@@ -10,7 +10,6 @@ import Header from './Header.jsx';
 import Landing from './Landing.jsx';
 import Dashboard from './Dashboard.jsx';
 import Footer from './Footer.jsx';
-const Orders = () => <h1>Orders</h1>;
 
 class App extends Component {
   componentDidMount() {
@@ -25,7 +24,6 @@ class App extends Component {
             <Header />
             <Route exact path='/' component={Landing} />
             <Route path='/account' component={Dashboard} />
-            <Route path='/account/orders' component={Orders} />
             <Footer />
           </div>
         </BrowserRouter>
