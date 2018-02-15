@@ -71,11 +71,15 @@ li {
 }
 
 .glyphicon {
-  padding-bottom: 90px;
   color: black;
 }
 
 .btn {
-  padding: 0px;
+  padding: 0px 10px;
   color: black;
+  font-size: 16px;
+}
+
+.cart {
+  padding-top: 0px;
 }
