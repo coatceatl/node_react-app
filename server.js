@@ -6,7 +6,7 @@ const path          = require('path');
 const bodyParser    = require('body-parser');
 const keys          = require('./serverside/config/keys');
 require('./serverside/models/User');
-require('./serverside/models/Order');
+require('./serverside/models/Article');
 require('./serverside/services/passport.js');
 
 mongoose.connect('mongodb://localhost:27017/users');
@@ -25,6 +25,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 require('./serverside/routes/authRoutes.js')(app);
+require('./serverside/routes/orderRoutes.js')(app);
 
 app.use(express.static('public'));
 
