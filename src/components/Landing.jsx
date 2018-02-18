@@ -19,7 +19,7 @@ class Landing extends Component {
                 <h3>MINT CAT</h3>
                 <p>Price</p>
                 <p>
-                  <Button bsStyle="primary">Add to Cart</Button>&nbsp;
+                  <Button bsStyle="primary"><a href='#'>Add to Cart</a></Button>&nbsp;
                   <Button bsStyle="default">Add to List</Button>
                 </p>
               </Thumbnail>

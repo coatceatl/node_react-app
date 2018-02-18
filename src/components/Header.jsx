@@ -24,7 +24,7 @@ class Header extends Component {
           </div>
         );
       default:
-        return [
+        return (
           <ButtonGroup>
             <Button bsStyle='link'>
               <Glyphicon glyph="heart-empty" /> Wishlist
@@ -36,7 +36,7 @@ class Header extends Component {
               <a href='/api/logout'>Logout</a>
             </Button>
           </ButtonGroup>
-        ];
+        );
     }
   }
 

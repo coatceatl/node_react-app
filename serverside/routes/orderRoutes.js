@@ -1,13 +1,5 @@
 {/*
 const mongoose = require('mongoose');
-
-const requireLogin = (req, res, next) => {
-  if (!req.user) {
-    return res.status(401).send({ error: 'You must log in!'});
-  }
-  next();
-};
-
 const Article = mongoose.model('articles');
 
 module.exports = app => {
@@ -21,4 +13,5 @@ module.exports = app => {
     _user: req.user.id});
   });
 };
+
 */}

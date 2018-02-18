@@ -1,3 +1,4 @@
+{/*
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const ArticleSchema = require('./Article');
@@ -9,3 +10,4 @@ const cartItemSchema = new Schema({
 });
 
 module.exports = cartItemSchema;
+*/}
