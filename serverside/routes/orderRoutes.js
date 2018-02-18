@@ -1,10 +1,15 @@
 const mongoose = require('mongoose');
-const Article = mongoose.model('articles');
+const article = require('../models/Article.js');
 
 module.exports = app => {
   app.get('/api/orders', (req, res) => {
-    res.send('Hello from orderAuth');
+    console.log('this is a file orderRoutes');
+    res.send(article);
   });
+
+//  app.post('/api/orders', (req, res) => {
+  //  const 
+ // });
 
 
   /*

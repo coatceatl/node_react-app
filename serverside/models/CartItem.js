@@ -10,4 +10,17 @@ const cartItemSchema = new Schema({
 });
 
 module.exports = cartItemSchema;
-*/}
+
+const mongoose         = require('mongoose');
+const { Schema } = mongoose;
+
+//db.createCollection('orders');
+
+const Article = mongoose.model('articles');
+
+const mintCat = new Article ({
+  title: 'Mint Cat',
+  description: 'Very cute kitty',
+  price: 10
+});
+*/

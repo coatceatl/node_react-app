@@ -9,7 +9,10 @@ require('./serverside/models/User');
 require('./serverside/models/Article');
 require('./serverside/services/passport.js');
 
-mongoose.connect('mongodb://localhost:27017/users');
+mongoose.connect('mongodb://localhost:27017/funny_toys_demo', (err) => {
+  if (err) throw err;
+  console.log('successfully connected');
+});
 
 const app = express();
 app.use(bodyParser.json());

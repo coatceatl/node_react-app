@@ -9,8 +9,15 @@ const articleSchema = new Schema({
 
 const Article = mongoose.model('articles', articleSchema);
 
-const mintCat = new Article ({
+const MintCat = new Article ({
   title: 'Mint Cat',
   description: 'Very cute kitty',
   price: 10
 });
+MintCat.save(function (err) {
+  if (err) throw err;
+  console.log('Mint Cat successfully saved');
+});
+
+//mongoose.model('articles', articleSchema);
+
