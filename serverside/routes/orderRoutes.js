@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const article = require('../models/Article.js');
+const article = require('../db/dbToys.js');
 
 module.exports = app => {
   app.get('/api/orders', (req, res) => {
