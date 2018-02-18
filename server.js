@@ -25,7 +25,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 require('./serverside/routes/authRoutes.js')(app);
-//require('./serverside/routes/orderRoutes.js')(app);
+require('./serverside/routes/orderRoutes.js')(app);
 
 app.use(express.static('public'));
 
