@@ -47738,7 +47738,7 @@ var Landing = function (_Component) {
                     { bsStyle: 'primary' },
                     _react2.default.createElement(
                       'a',
-                      { href: '#' },
+                      { href: '/api/orders' },
                       'Add to Cart'
                     )
                   ),

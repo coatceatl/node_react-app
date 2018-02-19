@@ -40,3 +40,4 @@ for (i=0; i < article.length; i++) {
   article[i].save();
 }
 
+module.exports =  article;
