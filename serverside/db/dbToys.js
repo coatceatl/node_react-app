@@ -3,7 +3,7 @@ const Article = require('../models/Article');
 
 mongoose.connect('mongodb://localhost:27017/funny_toys_demo');
 
-const article = [
+const product = [
   new Article({
     title: 'Sleepy Foxy',
     description: 'Crochet Toy Amigurumi Sleepy Fox',
@@ -36,8 +36,8 @@ const article = [
   })
 ];
 
-for (i=0; i < article.length; i++) {
-  article[i].save();
+for (i=0; i < product.length; i++) {
+  product[i].save();
 }
 
-module.exports =  article;
+module.exports =  product;
