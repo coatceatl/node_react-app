@@ -12,11 +12,11 @@ const product = [
   new Article({
     title: 'Mint Cat',
     description: 'Crochet Toy Amigurumi Mint Cat',
-    price: 85
+    price: 85,
   }),
   new Article({
     title: 'Violet Doll',
-    description: 'Crochet Toy Amigurumi Violet Doll',
+    description: 'Crochet Toy Amigurumi Violet Pups',
     price: 130
   }),
   new Article({
@@ -33,6 +33,21 @@ const product = [
     title: 'White Lamb',
     description: 'Crochet Toy Amigurumi White Lamb',
     price: 120
+  }),
+  new Article({
+    title: 'Koala',
+    description: 'Crochet Toy Amigurumi Koala',
+    price: 85
+  }),
+  new Article({
+    title: 'Giraffe',
+    description: 'Crochet Toy Amigurumi Cute Giraffe',
+    price: 85
+  }),
+  new Article({
+    title: 'Violet Cow',
+    description: 'Crochet Toy Amigurumi Violet Cow',
+    price: 85
   })
 ];
 

@@ -1,18 +1,9 @@
 const mongoose = require('mongoose');
 const product = require('../db/dbToys.js');
-const Article = require('../models/Article.js');
-
-const Giraffe = new Article ({
-  title: 'Giraffe',
-  description: 'Very cute doll',
-  price: 10
-});
-
 
 module.exports = app => {
   app.get('/api/orders', (req, res) => {
-    console.log(product[1]);
-    res.send(product[4]);
+    res.send(product);
   });
 
   app.post('/api/orders', (req, res) => {
