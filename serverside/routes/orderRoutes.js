@@ -6,13 +6,16 @@ module.exports = app => {
     res.send(product);
   });
 
-  app.post('/api/orders', (req, res) => {
+
+  /*app.post('/api/orders', (req, res) => {
     console.log(req.body);
     res.send({
       type: 'POST',
       name: req.body.name
     });
   });
+  */
+
 }
 
   /*
