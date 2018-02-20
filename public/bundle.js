@@ -12189,7 +12189,7 @@ var _App = __webpack_require__(215);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _reducers = __webpack_require__(418);
+var _reducers = __webpack_require__(419);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -31290,7 +31290,7 @@ var _Footer = __webpack_require__(417);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _About = __webpack_require__(420);
+var _About = __webpack_require__(418);
 
 var _About2 = _interopRequireDefault(_About);
 
@@ -35412,7 +35412,7 @@ var Header = function (_Component) {
                   { className: 'signin' },
                   _react2.default.createElement(
                     'a',
-                    { href: '#' },
+                    { href: '/about' },
                     'About'
                   ),
                   _react2.default.createElement(
@@ -47984,54 +47984,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _redux = __webpack_require__(67);
-
-var _authReducer = __webpack_require__(419);
-
-var _authReducer2 = _interopRequireDefault(_authReducer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = (0, _redux.combineReducers)({
-  auth: _authReducer2.default
-});
-
-/***/ }),
-/* 419 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports.default = function () {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-  var action = arguments[1];
-
-  switch (action.type) {
-    case _types.FETCH_USER:
-      return action.payload || false;
-    default:
-      return state;
-  }
-};
-
-var _types = __webpack_require__(131);
-
-/***/ }),
-/* 420 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(0);
@@ -48102,6 +48054,54 @@ var About = function (_Component) {
 }(_react.Component);
 
 exports.default = About;
+
+/***/ }),
+/* 419 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _redux = __webpack_require__(67);
+
+var _authReducer = __webpack_require__(420);
+
+var _authReducer2 = _interopRequireDefault(_authReducer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _redux.combineReducers)({
+  auth: _authReducer2.default
+});
+
+/***/ }),
+/* 420 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function () {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+  var action = arguments[1];
+
+  switch (action.type) {
+    case _types.FETCH_USER:
+      return action.payload || false;
+    default:
+      return state;
+  }
+};
+
+var _types = __webpack_require__(131);
 
 /***/ })
 /******/ ]);

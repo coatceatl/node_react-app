@@ -51,7 +51,7 @@ class Header extends Component {
               </div>
               <div className='nav-right'>
                 <div className='signin'>
-                  <a href='#'>About</a>
+                  <a href='/about'>About</a>
                   <a href='#'>{this.renderContent()}</a>
                 </div>
               </div>

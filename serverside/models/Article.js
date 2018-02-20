@@ -13,11 +13,3 @@ const Article = mongoose.model('articles', articleSchema);
 module.exports = Article;
 
 
-/*
-const VioletDoll = new Article ({
-  title: 'Violet Doll',
-  description: 'Very cute doll',
-  price: 11
-});
-VioletDoll.save();
-*/

@@ -31,7 +31,7 @@ module.exports = (app) => {
   );
 
   app.get('/about', (req, res) => {
-    res.send('About page');
+    res.send('Page About');
   });
 
   app.get('/api/logout', (req, res) => {

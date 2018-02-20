@@ -6,6 +6,9 @@ module.exports = app => {
     res.send(product);
   });
 
+  app.get('/api/orders/:id', (req, res) => {
+  });
+
 
   /*app.post('/api/orders', (req, res) => {
     console.log(req.body);
