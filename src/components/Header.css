@@ -37,9 +37,9 @@ a .container .nav-right {
 .nav-fill {
   width: auto;
   font-size: 30px;
-  font-weight: bold;
   text-align: center;
   padding-top: 20px;
+  font-family: Lobster, Sans-Serif;
 }
 
 #nav-subnav {
