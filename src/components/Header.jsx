@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Trigger from './Trigger.jsx';
+import Cart from './Cart.jsx';
 import './Header.css';
 
 import {
@@ -32,7 +33,7 @@ class Header extends Component {
             <Button bsStyle='link'className='cart'>
               <Glyphicon glyph="shoping-cart" />
               <a href='/api/cart'>
-                Cart
+                <Cart />
               </a>
             </Button>
             <Button bsStyle='link'>

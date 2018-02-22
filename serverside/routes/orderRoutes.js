@@ -7,6 +7,7 @@ module.exports = app => {
   });
 
   app.get('/api/orders/:id', (req, res) => {
+    res.send('page orders/:id');
   });
 
   app.get('/api/cart', (req, res) => {

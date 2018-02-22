@@ -31294,6 +31294,10 @@ var _About = __webpack_require__(418);
 
 var _About2 = _interopRequireDefault(_About);
 
+var _Cart = __webpack_require__(421);
+
+var _Cart2 = _interopRequireDefault(_Cart);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -31334,6 +31338,7 @@ var App = function (_Component) {
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Landing2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/account', component: _Dashboard2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/about/', component: _About2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/cart', component: _Cart2.default }),
             _react2.default.createElement(_Footer2.default, null)
           )
         )
@@ -35319,6 +35324,10 @@ var _Trigger = __webpack_require__(263);
 
 var _Trigger2 = _interopRequireDefault(_Trigger);
 
+var _Cart = __webpack_require__(421);
+
+var _Cart2 = _interopRequireDefault(_Cart);
+
 __webpack_require__(410);
 
 var _reactBootstrap = __webpack_require__(51);
@@ -35369,7 +35378,7 @@ var Header = function (_Component) {
               _react2.default.createElement(
                 'a',
                 { href: '/api/cart' },
-                'Cart'
+                _react2.default.createElement(_Cart2.default, null)
               )
             ),
             _react2.default.createElement(
@@ -48002,14 +48011,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-/*
-import {
-  Grid,
-  Row,
-  Col
-} from 'react-bootstrap';
-*/
-
 var About = function (_Component) {
   _inherits(About, _Component);
 
@@ -48106,6 +48107,60 @@ exports.default = function () {
 };
 
 var _types = __webpack_require__(131);
+
+/***/ }),
+/* 421 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Cart = function (_Component) {
+  _inherits(Cart, _Component);
+
+  function Cart() {
+    _classCallCheck(this, Cart);
+
+    return _possibleConstructorReturn(this, (Cart.__proto__ || Object.getPrototypeOf(Cart)).apply(this, arguments));
+  }
+
+  _createClass(Cart, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'cart' },
+        _react2.default.createElement(
+          'h5',
+          null,
+          'My Cart'
+        )
+      );
+    }
+  }]);
+
+  return Cart;
+}(_react.Component);
+
+exports.default = Cart;
 
 /***/ })
 /******/ ]);

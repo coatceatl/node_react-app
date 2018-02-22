@@ -11,6 +11,7 @@ import Landing from './Landing.jsx';
 import Dashboard from './Dashboard.jsx';
 import Footer from './Footer.jsx';
 import About from './About.jsx';
+import Cart from './Cart.jsx';
 
 class App extends Component {
   componentDidMount() {
@@ -26,6 +27,7 @@ class App extends Component {
             <Route exact path='/' component={Landing} />
             <Route path='/account' component={Dashboard} />
             <Route path='/about/' component={About} />
+            <Route path='/cart' component={Cart} />
             <Footer />
           </div>
         </BrowserRouter>
