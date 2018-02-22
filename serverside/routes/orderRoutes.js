@@ -9,6 +9,10 @@ module.exports = app => {
   app.get('/api/orders/:id', (req, res) => {
   });
 
+  app.get('/api/cart', (req, res) => {
+    res.send('This is a page cart');
+  });
+
 
   /*app.post('/api/orders', (req, res) => {
     console.log(req.body);

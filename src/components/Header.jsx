@@ -30,7 +30,10 @@ class Header extends Component {
               <Glyphicon glyph="heart-empty" /> Wishlist
             </Button>
             <Button bsStyle='link'className='cart'>
-              <Glyphicon glyph="shoping-cart" /> Cart
+              <Glyphicon glyph="shoping-cart" />
+              <a href='/api/cart'>
+                Cart
+              </a>
             </Button>
             <Button bsStyle='link'>
               <a href='/api/logout'>Logout</a>
