@@ -12,6 +12,7 @@ import Dashboard from './Dashboard.jsx';
 import Footer from './Footer.jsx';
 import About from './About.jsx';
 import Cart from './Cart.jsx';
+import ProductPage from './ProductPage.jsx';
 
 class App extends Component {
   componentDidMount() {
@@ -28,6 +29,7 @@ class App extends Component {
             <Route path='/account' component={Dashboard} />
             <Route path='/about/' component={About} />
             <Route path='/api/cart' component={Cart} />
+            <Route path='/api/product' component={ProductPage} />
             <Footer />
           </div>
         </BrowserRouter>

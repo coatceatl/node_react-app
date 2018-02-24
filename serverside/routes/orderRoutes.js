@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 const product = require('../db/dbToys.js');
+const Product = mongoose.model('articles');
+const ObjectId = mongoose.Types.ObjectId;
+
+mongoose.connect('mongodb://localhost:27017/funny_toys_demo');
 
 module.exports = app => {
   app.get('/api/orders', (req, res) => {
@@ -10,21 +14,16 @@ module.exports = app => {
     res.send('Page Wishlist');
   });
 
-  app.get('/api/cart', (req, res) => {
-    console.log('Page Cart');
-    res.send(product);
-  });
-
-
-  /*app.post('/api/orders', (req, res) => {
-    console.log(req.body);
-    res.send({
-      type: 'POST',
-      name: req.body.name
+  app.get('/api/products/:id', (req, res) => {
+    console.log(req.params);
+    Product.find({}, function(err, product) {
+      if (err) {
+        console.log('error');
+        return res.sendStatus(500);
+      }
+      res.send(req.params);
     });
   });
-  */
-
 }
 
   /*

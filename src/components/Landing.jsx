@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//import product from '../../serverside/db/dbToys.js';
 import {
   Button,
   Grid,
@@ -20,7 +21,7 @@ class Landing extends Component {
                 <p>Price</p>
                 <p>
                   <Button bsStyle="primary"><a href='/api/orders'>Add to Cart</a></Button>&nbsp;
-                  <Button bsStyle="default">Add to List</Button>
+                  <Button bsStyle="default"><a href='/api/wishlist'>Add to List</a></Button>
                 </p>
               </Thumbnail>
             </Col>
