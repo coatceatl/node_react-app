@@ -35432,7 +35432,7 @@ var Header = function (_Component) {
             _react2.default.createElement(
               _reactBootstrap.Button,
               { bsStyle: 'link', className: 'cart' },
-              _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'shoping-cart' }),
+              _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'shopping-cart' }),
               _react2.default.createElement(_MyCart2.default, null)
             ),
             _react2.default.createElement(

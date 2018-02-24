@@ -33,7 +33,7 @@ class Header extends Component {
               <Wishlist />
             </Button>
             <Button bsStyle='link'className='cart'>
-              <Glyphicon glyph='shoping-cart' />
+              <Glyphicon glyph='shopping-cart' />
               <MyCart />
             </Button>
             <Button bsStyle='link'>
