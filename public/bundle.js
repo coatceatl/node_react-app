@@ -48204,7 +48204,7 @@ var Wishlist = function (_Component) {
         null,
         _react2.default.createElement(
           'a',
-          { href: '#' },
+          { href: '/api/wishlist' },
           'Wishlist'
         )
       );

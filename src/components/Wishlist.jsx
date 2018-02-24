@@ -4,7 +4,7 @@ class Wishlist extends Component {
   render() {
     return (
       <div>
-        <a href='#'>Wishlist</a>
+        <a href='/api/wishlist'>Wishlist</a>
       </div>
     );
   }

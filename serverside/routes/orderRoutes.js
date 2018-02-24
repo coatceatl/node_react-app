@@ -6,12 +6,13 @@ module.exports = app => {
     res.send(product);
   });
 
-  app.get('/api/orders/:id', (req, res) => {
-    res.send('page orders/:id');
+  app.get('/api/wishlist', (req, res) => {
+    res.send('Page Wishlist');
   });
 
   app.get('/api/cart', (req, res) => {
-    res.send('This is a page cart');
+    console.log('Page Cart');
+    res.send(product);
   });
 
 
