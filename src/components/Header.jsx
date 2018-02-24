@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Trigger from './Trigger.jsx';
-import Cart from './Cart.jsx';
+import Wishlist from './Wishlist.jsx';
+import MyCart from './MyCart.jsx';
 import './Header.css';
 
 import {
@@ -28,13 +29,12 @@ class Header extends Component {
         return (
           <ButtonGroup>
             <Button bsStyle='link'>
-              <Glyphicon glyph="heart-empty" /> Wishlist
+              <Glyphicon glyph='heart-empty' />
+              <Wishlist />
             </Button>
             <Button bsStyle='link'className='cart'>
-              <Glyphicon glyph="shoping-cart" />
-              <a href='/api/cart'>
-                <Cart />
-              </a>
+              <Glyphicon glyph='shoping-cart' />
+              <MyCart />
             </Button>
             <Button bsStyle='link'>
               <a href='/api/logout'>Logout</a>

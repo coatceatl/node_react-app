@@ -27,7 +27,7 @@ class App extends Component {
             <Route exact path='/' component={Landing} />
             <Route path='/account' component={Dashboard} />
             <Route path='/about/' component={About} />
-            <Route path='/cart' component={Cart} />
+            <Route path='/api/cart' component={Cart} />
             <Footer />
           </div>
         </BrowserRouter>
