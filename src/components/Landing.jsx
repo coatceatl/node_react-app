@@ -45,6 +45,36 @@ class Landing extends Component {
               </p>
               </Thumbnail>
             </Col>
+            <Col xs={6} md={4}>
+              <Thumbnail src='img/fox.jpg' alt='Sleepy fox'>
+              <h3>SLEEPY FOX</h3>
+              <p>Price</p>
+              <p>
+                <Button bsStyle="primary">Add to Cart</Button>&nbsp;
+                <Button bsStyle="default">Add to List</Button>
+              </p>
+              </Thumbnail>
+            </Col>
+            <Col xs={6} md={4}>
+              <Thumbnail src='img/fox.jpg' alt='Sleepy fox'>
+              <h3>SLEEPY FOX</h3>
+              <p>Price</p>
+              <p>
+                <Button bsStyle="primary">Add to Cart</Button>&nbsp;
+                <Button bsStyle="default">Add to List</Button>
+              </p>
+              </Thumbnail>
+            </Col>
+            <Col xs={6} md={4}>
+              <Thumbnail src='img/fox.jpg' alt='Sleepy fox'>
+              <h3>SLEEPY FOX</h3>
+              <p>Price</p>
+              <p>
+                <Button bsStyle="primary">Add to Cart</Button>&nbsp;
+                <Button bsStyle="default">Add to List</Button>
+              </p>
+              </Thumbnail>
+            </Col>
           </Row>
         </Grid>
 

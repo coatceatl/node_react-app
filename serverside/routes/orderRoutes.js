@@ -1,17 +1,22 @@
 const mongoose = require('mongoose');
 const product = require('../db/dbToys.js');
 const Product = mongoose.model('articles');
-const ObjectId = mongoose.Types.ObjectId;
 
 mongoose.connect('mongodb://localhost:27017/funny_toys_demo');
 
 module.exports = app => {
+//  app.use('/api/product', product);
+
   app.get('/api/orders', (req, res) => {
     res.send(product);
   });
 
   app.get('/api/wishlist', (req, res) => {
     res.send('Page Wishlist');
+  });
+
+  app.get('/api/products', (req, res) => {
+    console.log(req.params);
   });
 
   app.get('/api/products/:id', (req, res) => {
@@ -24,6 +29,23 @@ module.exports = app => {
       res.send(req.params);
     });
   });
+
+/*
+  app.get('/api/products/:id', (req, res) => {
+    const id = req.params.id;
+    console.log(id);
+    Product.findById(id, (err, data) => {
+      console.log(index);
+      if (err) {
+        console.log('error');
+        return res.sendStatus(500);
+      } else {
+        res.send(id);
+      }
+    });
+  });
+  */
+
 }
 
   /*
