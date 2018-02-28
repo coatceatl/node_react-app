@@ -23,14 +23,13 @@ module.exports = app => {
     });
   });
 
-  app.get('/api/products/:id', (req, res) => {
+  app.get('/api/products/:product_id', (req, res) => {
     console.log(req.params);
-    Product.find({}, function(err, product) {
+    Product.findById(req.params.product_id, function(err, product) {
       if (err) {
-        console.log('error');
         return res.sendStatus(500);
       }
-      res.send(req.params);
+      res.json(product);
     });
   });
 
