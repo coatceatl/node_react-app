@@ -16,8 +16,11 @@ module.exports = app => {
   });
 
   app.get('/api/products', (req, res) => {
-    console.log(req.params);
-    res.json(product);
+    Product.find(function(err, product) {
+      if (err)
+        res.send(err);
+      res.json(product);
+    });
   });
 
   app.get('/api/products/:id', (req, res) => {
