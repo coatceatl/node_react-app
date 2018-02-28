@@ -17,6 +17,7 @@ module.exports = app => {
 
   app.get('/api/products', (req, res) => {
     console.log(req.params);
+    res.json(product);
   });
 
   app.get('/api/products/:id', (req, res) => {
