@@ -23,9 +23,10 @@ module.exports = app => {
     });
   });
 
-  app.get('/api/products/:product_id', (req, res) => {
+  app.get('/api/products/:id', (req, res) => {
     console.log(req.params);
-    Product.findById(req.params.product_id, function(err, product) {
+    const id = req.params;
+    Product.find(id, function(err, product) {
       if (err) {
         return res.sendStatus(500);
       }
