@@ -13,6 +13,7 @@ import Footer from './Footer.jsx';
 import About from './About.jsx';
 import Cart from './Cart.jsx';
 import ProductPage from './ProductPage.jsx';
+import Toy from './Toy.jsx';
 
 class App extends Component {
   componentDidMount() {
@@ -25,11 +26,12 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Header />
+            <Toy />
             <Route exact path='/' component={Landing} />
             <Route path='/account' component={Dashboard} />
             <Route path='/about/' component={About} />
             <Route path='/api/cart' component={Cart} />
-            <Route path='/api/product' component={ProductPage} />
+            <Route path='/api/products/:id' component={ProductPage} />
             <Footer />
           </div>
         </BrowserRouter>

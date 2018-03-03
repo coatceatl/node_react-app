@@ -5,7 +5,6 @@ const Product = mongoose.model('articles');
 mongoose.connect('mongodb://localhost:27017/funny_toys_demo');
 
 module.exports = app => {
-//  app.use('/api/product', product);
 
   app.get('/api/orders', (req, res) => {
     res.send(product);
@@ -15,6 +14,10 @@ module.exports = app => {
     res.send('Page Wishlist');
   });
 
+  //app.get('/api/product', (req, res) => {
+  //  res.json(product);
+  //});
+
   app.get('/api/products', (req, res) => {
     Product.find(function(err, product) {
       if (err)
@@ -22,7 +25,7 @@ module.exports = app => {
       res.json(product);
     });
   });
-
+/*
   app.get('/api/products/:id', (req, res) => {
     console.log(req.params);
     const id = req.params;
@@ -33,6 +36,14 @@ module.exports = app => {
       res.json(product);
     });
   });
+*/
+
+  app.get('/api/products/:id', (req, res) => {
+    console.log(req.params);
+    res.send(req.product);
+  });
+
+
 
 /*
   app.get('/api/products/:id', (req, res) => {

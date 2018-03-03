@@ -8127,6 +8127,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 var FETCH_USER = exports.FETCH_USER = 'fetch_user';
 
+var FETCH_PRODUCT = exports.FETCH_PRODUCT = 'fetch_product';
+
 /***/ }),
 /* 132 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -12189,7 +12191,7 @@ var _App = __webpack_require__(215);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _reducers = __webpack_require__(423);
+var _reducers = __webpack_require__(424);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -31302,6 +31304,10 @@ var _ProductPage = __webpack_require__(422);
 
 var _ProductPage2 = _interopRequireDefault(_ProductPage);
 
+var _Toy = __webpack_require__(423);
+
+var _Toy2 = _interopRequireDefault(_Toy);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -31339,11 +31345,12 @@ var App = function (_Component) {
             'div',
             null,
             _react2.default.createElement(_Header2.default, null),
+            _react2.default.createElement(_Toy2.default, null),
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Landing2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/account', component: _Dashboard2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/about/', component: _About2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/api/cart', component: _Cart2.default }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/api/product', component: _ProductPage2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/api/products/:id', component: _ProductPage2.default }),
             _react2.default.createElement(_Footer2.default, null)
           )
         )
@@ -34384,7 +34391,7 @@ var withRouter = function withRouter(Component) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.fetchUser = undefined;
+exports.fetchProduct = exports.fetchUser = undefined;
 
 var _axios = __webpack_require__(243);
 
@@ -34399,6 +34406,17 @@ var fetchUser = exports.fetchUser = function fetchUser() {
     _axios2.default.get('/api/current_user').then(function (res) {
       return dispatch({ type: _types.FETCH_USER, payload: res.data });
     });
+  };
+};
+
+var fetchProduct = exports.fetchProduct = function fetchProduct() {
+  return function (dispatch) {
+    _axios2.default.get('/api/products/:id').then(function (res) {
+      return res.json();
+    }).then(function (json) {
+      return console.log(json);
+    });
+    //(res => dispatch({ type: FETCH_PRODUCT, payload: res.data }));
   };
 };
 
@@ -48365,13 +48383,27 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var ProductPage = function (_Component) {
   _inherits(ProductPage, _Component);
 
-  function ProductPage() {
+  function ProductPage(props) {
     _classCallCheck(this, ProductPage);
 
-    return _possibleConstructorReturn(this, (ProductPage.__proto__ || Object.getPrototypeOf(ProductPage)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (ProductPage.__proto__ || Object.getPrototypeOf(ProductPage)).call(this, props));
+
+    _this.state = { products: [] };
+    return _this;
   }
 
   _createClass(ProductPage, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      fetch('/products').then(function (res) {
+        return res.json();
+      }).then(function (products) {
+        return _this2.setState({ products: products });
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -48380,7 +48412,18 @@ var ProductPage = function (_Component) {
         _react2.default.createElement(
           'h2',
           null,
-          'product'
+          'ProductPage'
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          this.state.products.map(function (product) {
+            return _react2.default.createElement(
+              'li',
+              { key: products.id },
+              product.title
+            );
+          })
         )
       );
     }
@@ -48402,9 +48445,54 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Toy = function Toy(_ref) {
+  var title = _ref.title,
+      picture = _ref.picture,
+      description = _ref.description;
+
+  return _react2.default.createElement(
+    'div',
+    { className: 'card open' },
+    _react2.default.createElement(
+      'div',
+      { className: 'header' },
+      title
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'body' },
+      _react2.default.createElement('img', { src: picture, alt: title }),
+      _react2.default.createElement(
+        'p',
+        null,
+        description
+      )
+    )
+  );
+};
+
+exports.default = Toy;
+
+/***/ }),
+/* 424 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _redux = __webpack_require__(67);
 
-var _authReducer = __webpack_require__(424);
+var _authReducer = __webpack_require__(425);
 
 var _authReducer2 = _interopRequireDefault(_authReducer);
 
@@ -48415,7 +48503,7 @@ exports.default = (0, _redux.combineReducers)({
 });
 
 /***/ }),
-/* 424 */
+/* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
