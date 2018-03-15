@@ -47275,7 +47275,7 @@ exports = module.exports = __webpack_require__(414)(false);
 
 
 // module
-exports.push([module.i, "body {\n  background-color: #f7f7f7;\n}\n\nheader {\n  border-width: 0.14px;\n  border-color: #b5b7ba;\n  border-style: solid;\n  background-color: #dfdfdf;\n  align-items: center;\n}\n\n#nav-main {\n  width: 100%;\n  height: 100px;\n  position: relative;\n  justify-content: space-between;\n}\n\n.nav-left {\n  position: relative;\n  float: left;\n}\n\n.nav-right {\n  position: relative;\n  float: right;\n  width: auto;\n  display: inline-block;\n  vertical-align: bottom;\n}\n\na .container .nav-right {\n  width: 70px;\n}\n\n.nav-fill {\n  width: auto;\n  font-size: 30px;\n  text-align: center;\n  padding-top: 20px;\n  font-family: Lobster, Sans-Serif;\n}\n\n#nav-subnav {\n  height: 50px;\n  text-align: center;\n  background-color:darkgray;\n  padding-top: 10px;\n}\n\n#navbar {\n  position: relative;\n  background-color: #efeded;\n  height: 150px;\n  border-color: #e7e7e7;\n}\n\n.signin {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  padding-right: 10px;\n  display: flex;\n  justify-content: space-between;\n  width: 350px;\n  height: 150px;\n}\n\na {\n  color:black;\n  font-size: 16px;\n}\n\n.nav-content {\n  padding: 5px;\n  height: 48px;\n  display: inline-block;\n  width: 20%;\n}\n\nli {\n  padding: 5px;\n}\n\n.glyphicon {\n  color: black;\n}\n\n.btn {\n  padding: 0px 10px;\n  color: black;\n  font-size: 16px;\n}\n\n.cart {\n  padding-top: 0px;\n}\n", ""]);
+exports.push([module.i, "body {\n  background-color: #f7f7f7;\n}\n\nheader {\n  border-width: 0.14px;\n  border-color: #b5b7ba;\n  border-style: solid;\n  background-color: #dfdfdf;\n  align-items: center;\n}\n\n#nav-main {\n  width: 100%;\n  height: 100px;\n  position: relative;\n  justify-content: space-between;\n}\n\n.nav-left {\n  position: relative;\n  float: left;\n}\n\n.nav-right {\n  position: relative;\n  float: right;\n  width: auto;\n  display: inline-block;\n  vertical-align: bottom;\n}\n\na .container .nav-right {\n  width: 70px;\n}\n\n.nav-fill {\n  width: auto;\n  font-size: 30px;\n  text-align: center;\n  padding-top: 20px;\n  font-family: Lobster, Sans-Serif;\n}\n\n#nav-subnav {\n  height: 50px;\n  text-align: center;\n  background-color:darkgray;\n  padding-top: 10px;\n}\n\n#navbar {\n  position: relative;\n  background-color: #efeded;\n  height: 150px;\n  border-color: #e7e7e7;\n}\n\n.signin {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  padding-right: 10px;\n  display: flex;\n  justify-content: space-around;\n  width: 350px;\n  height: 150px;\n}\n\na {\n  color:black;\n  font-size: 16px;\n}\n\n.nav-content {\n  padding: 5px;\n  height: 48px;\n  display: inline-block;\n  width: 20%;\n}\n\nli {\n  padding: 5px;\n}\n\n.glyphicon {\n  color: black;\n}\n\n.btn {\n  padding: 0px 10px;\n  color: black;\n  font-size: 16px;\n}\n\n.cart {\n  padding-top: 0px;\n}\n\n.btn-group button {\n  margin-top: 0;\n}\n", ""]);
 
 // exports
 
@@ -48001,7 +48001,7 @@ var Landing = function (_Component) {
               { xs: 6, md: 4 },
               _react2.default.createElement(
                 _reactBootstrap.Thumbnail,
-                { src: 'img/bunny.jpg', alt: 'Bunny with carrot' },
+                { alt: 'Bunny with carrot' },
                 _react2.default.createElement(
                   'h3',
                   null,
@@ -48034,7 +48034,7 @@ var Landing = function (_Component) {
               { xs: 6, md: 4 },
               _react2.default.createElement(
                 _reactBootstrap.Thumbnail,
-                { src: 'img/horse.jpg', alt: 'Horse' },
+                { alt: 'Horse' },
                 _react2.default.createElement(
                   'h3',
                   null,
@@ -48067,7 +48067,7 @@ var Landing = function (_Component) {
               { xs: 6, md: 4 },
               _react2.default.createElement(
                 _reactBootstrap.Thumbnail,
-                { src: 'img/cat_love_sport.jpg', alt: 'Cat love sport' },
+                { alt: 'Cat love sport' },
                 _react2.default.createElement(
                   'h3',
                   null,
