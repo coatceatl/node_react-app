@@ -35623,7 +35623,8 @@ var Trigger = function (_Component) {
                 _react2.default.createElement(
                   'a',
                   { href: '/auth/facebook' },
-                  'Sign in with Facebook'
+                  _react2.default.createElement('i', { 'class': 'fab fa-facebook' }),
+                  ' Sign in with Facebook'
                 )
               ),
               _react2.default.createElement(
@@ -35632,7 +35633,8 @@ var Trigger = function (_Component) {
                 _react2.default.createElement(
                   'a',
                   { href: '/auth/google' },
-                  'Sign in with Google'
+                  _react2.default.createElement('i', { 'class': 'fab fa-google' }),
+                  ' Sign in with Google'
                 )
               )
             )
@@ -48603,7 +48605,7 @@ exports = module.exports = __webpack_require__(414)(false);
 
 
 // module
-exports.push([module.i, "/*\n.modal-container {\n  position: relative;\n}\n\n.modal-container .modal, .modal-container .modal-backdrop {\n  position: absolute;\n}\n\n.modal-body {\n  float: none;\n}\n\n.btn {\n  display: block;\n  width: 185px;\n}\n\nbutton {\n  padding: 0px;\n  color: black;\n}\n*/\n\n.modal-content {\n  width: 350px;\n  min-height: 40vh;\n}\n\n.modal-header {\n  text-align: center;\n}\n\n.modal-body {\n  display: flex;\n  justify-content: center;\n}\n\n.btn-group-vertical a {\n  text-decoration: none;\n  font-size: 25px;\n}\n\nbutton {\n  padding: 10px 20px;\n  margin: 10px 0;\n\n}\n\n", ""]);
+exports.push([module.i, ".modal-content {\n  width: 350px;\n  min-height: 40vh;\n}\n\n.modal-header {\n  text-align: center;\n}\n\n#contained-modal-title {\n  text-transform: uppercase;\n  letter-spacing: .3rem;\n}\n\n.modal-body {\n  display: flex;\n  justify-content: center;\n}\n\n.btn-group-vertical a {\n  text-decoration: none;\n  font-size: 25px;\n}\n\nbutton {\n  padding: 10px 20px;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n\n\n", ""]);
 
 // exports
 
