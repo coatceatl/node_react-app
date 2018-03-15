@@ -34391,7 +34391,7 @@ var withRouter = function withRouter(Component) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.fetchProduct = exports.fetchUser = undefined;
+exports.fetchUser = undefined;
 
 var _axios = __webpack_require__(243);
 
@@ -34409,17 +34409,32 @@ var fetchUser = exports.fetchUser = function fetchUser() {
   };
 };
 
-var fetchProduct = exports.fetchProduct = function fetchProduct() {
-  return function (dispatch) {
-    _axios2.default.get('/api/products/:id').then(function (res) {
-      return res.json();
-    }).then(function (json) {
-      return console.log(json);
-    });
+//const fetchProduct;
+//fetch('/api/products/product.json)
+//  console.log(product.json);
+//  .then(function(response) {
+//    alert(response.headers.get('Content-Type'));
+//    alert(response.status);
+//
+//    return response.json();
+//  })
+//  .then(function(product) {
+//    alert(product.title);
+//  })
+//  .catch( alert );
+
+/*
+export const fetchProduct = () => {
+  return dispatch => {
+    axios
+    .get('/api/products')
+    .then(res => res.json())
+    .then(json => console.log(json));
+    //(res => dispatch({ type: FETCH_)
     //(res => dispatch({ type: FETCH_PRODUCT, payload: res.data }));
   };
 };
-
+*/
 /*
 export const fetchUser = () => {
   return async dispatch => {
@@ -35526,6 +35541,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(426);
 
 var _reactBootstrap = __webpack_require__(51);
 
@@ -47982,11 +47999,11 @@ var Landing = function (_Component) {
               { xs: 6, md: 4 },
               _react2.default.createElement(
                 _reactBootstrap.Thumbnail,
-                { src: 'img/fox.jpg', alt: 'Sleepy fox' },
+                { src: 'img/bunny.jpg', alt: 'Bunny with carrot' },
                 _react2.default.createElement(
                   'h3',
                   null,
-                  'SLEEPY FOX'
+                  'BUNNY WITH CARROT'
                 ),
                 _react2.default.createElement(
                   'p',
@@ -48015,11 +48032,11 @@ var Landing = function (_Component) {
               { xs: 6, md: 4 },
               _react2.default.createElement(
                 _reactBootstrap.Thumbnail,
-                { src: 'img/fox.jpg', alt: 'Sleepy fox' },
+                { src: 'img/horse.jpg', alt: 'Horse' },
                 _react2.default.createElement(
                   'h3',
                   null,
-                  'SLEEPY FOX'
+                  'HORSE'
                 ),
                 _react2.default.createElement(
                   'p',
@@ -48048,11 +48065,11 @@ var Landing = function (_Component) {
               { xs: 6, md: 4 },
               _react2.default.createElement(
                 _reactBootstrap.Thumbnail,
-                { src: 'img/fox.jpg', alt: 'Sleepy fox' },
+                { src: 'img/cat_love_sport.jpg', alt: 'Cat love sport' },
                 _react2.default.createElement(
                   'h3',
                   null,
-                  'SLEEPY FOX'
+                  'CAT LOVE SPORT'
                 ),
                 _react2.default.createElement(
                   'p',
@@ -48526,6 +48543,70 @@ exports.default = function () {
 };
 
 var _types = __webpack_require__(131);
+
+/***/ }),
+/* 426 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(427);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(415)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../node_modules/css-loader/index.js!./Trigger.css", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js!./Trigger.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 427 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(414)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*\n.modal-container {\n  position: relative;\n}\n\n.modal-container .modal, .modal-container .modal-backdrop {\n  position: absolute;\n}\n\n.modal-body {\n  float: none;\n}\n\n.btn {\n  display: block;\n  width: 185px;\n}\n\nbutton {\n  padding: 0px;\n  color: black;\n}\n*/\n\n.modal-content {\n  width: 350px;\n  min-height: 40vh;\n}\n\n.modal-header {\n  text-align: center;\n}\n\n\n", ""]);
+
+// exports
+
 
 /***/ })
 /******/ ]);

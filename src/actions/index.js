@@ -10,16 +10,32 @@ export const fetchUser = () => {
   };
 };
 
+//const fetchProduct;
+//fetch('/api/products/product.json)
+//  console.log(product.json);
+//  .then(function(response) {
+//    alert(response.headers.get('Content-Type'));
+//    alert(response.status);
+//
+//    return response.json();
+//  })
+//  .then(function(product) {
+//    alert(product.title);
+//  })
+//  .catch( alert );
+
+/*
 export const fetchProduct = () => {
   return dispatch => {
     axios
-      .get('/api/products/:id')
+    .get('/api/products')
     .then(res => res.json())
     .then(json => console.log(json));
+    //(res => dispatch({ type: FETCH_)
     //(res => dispatch({ type: FETCH_PRODUCT, payload: res.data }));
   };
 };
-
+*/
 /*
 export const fetchUser = () => {
   return async dispatch => {

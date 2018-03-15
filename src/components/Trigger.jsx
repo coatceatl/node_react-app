@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Trigger.css';
 import {
   Button,
   Modal,

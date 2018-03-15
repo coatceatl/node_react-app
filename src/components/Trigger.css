@@ -1,14 +1,10 @@
+/*
 .modal-container {
   position: relative;
 }
 
 .modal-container .modal, .modal-container .modal-backdrop {
   position: absolute;
-}
-
-.modal-content {
-  width: 200px;
-  height: 350px;
 }
 
 .modal-body {
@@ -23,6 +19,16 @@
 button {
   padding: 0px;
   color: black;
+}
+*/
+
+.modal-content {
+  width: 350px;
+  min-height: 40vh;
+}
+
+.modal-header {
+  text-align: center;
 }
 
 

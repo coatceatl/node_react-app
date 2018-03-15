@@ -46,8 +46,8 @@ class Landing extends Component {
               </Thumbnail>
             </Col>
             <Col xs={6} md={4}>
-              <Thumbnail src='img/fox.jpg' alt='Sleepy fox'>
-              <h3>SLEEPY FOX</h3>
+              <Thumbnail src='img/bunny.jpg' alt='Bunny with carrot'>
+              <h3>BUNNY WITH CARROT</h3>
               <p>Price</p>
               <p>
                 <Button bsStyle="primary">Add to Cart</Button>&nbsp;
@@ -56,8 +56,8 @@ class Landing extends Component {
               </Thumbnail>
             </Col>
             <Col xs={6} md={4}>
-              <Thumbnail src='img/fox.jpg' alt='Sleepy fox'>
-              <h3>SLEEPY FOX</h3>
+              <Thumbnail src='img/horse.jpg' alt='Horse'>
+              <h3>HORSE</h3>
               <p>Price</p>
               <p>
                 <Button bsStyle="primary">Add to Cart</Button>&nbsp;
@@ -66,8 +66,8 @@ class Landing extends Component {
               </Thumbnail>
             </Col>
             <Col xs={6} md={4}>
-              <Thumbnail src='img/fox.jpg' alt='Sleepy fox'>
-              <h3>SLEEPY FOX</h3>
+              <Thumbnail src='img/cat_love_sport.jpg' alt='Cat love sport'>
+              <h3>CAT LOVE SPORT</h3>
               <p>Price</p>
               <p>
                 <Button bsStyle="primary">Add to Cart</Button>&nbsp;
