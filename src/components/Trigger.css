@@ -31,4 +31,19 @@ button {
   text-align: center;
 }
 
+.modal-body {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-group-vertical a {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+
+}
 
