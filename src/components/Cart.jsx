@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class Cart extends Component {
   render() {
     return (
-      <div className='cart'>
-        <h5>My Cart</h5>
+      <div className='cart-icon'>
+        <a href='/api/cart'> My Cart</a>
       </div>
     );
   }

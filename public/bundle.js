@@ -35366,9 +35366,9 @@ var _Wishlist = __webpack_require__(410);
 
 var _Wishlist2 = _interopRequireDefault(_Wishlist);
 
-var _MyCart = __webpack_require__(411);
+var _Cart = __webpack_require__(421);
 
-var _MyCart2 = _interopRequireDefault(_MyCart);
+var _Cart2 = _interopRequireDefault(_Cart);
 
 __webpack_require__(412);
 
@@ -35417,7 +35417,7 @@ var Header = function (_Component) {
               _reactBootstrap.Button,
               { bsStyle: 'link', className: 'cart' },
               _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'shopping-cart' }),
-              _react2.default.createElement(_MyCart2.default, null)
+              _react2.default.createElement(_Cart2.default, null)
             ),
             _react2.default.createElement(
               _reactBootstrap.Button,
@@ -47130,7 +47130,7 @@ var Wishlist = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
+        { className: 'wish-icon' },
         _react2.default.createElement(
           'a',
           { href: '/api/wishlist' },
@@ -47146,60 +47146,7 @@ var Wishlist = function (_Component) {
 exports.default = Wishlist;
 
 /***/ }),
-/* 411 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MyCart = function (_Component) {
-  _inherits(MyCart, _Component);
-
-  function MyCart() {
-    _classCallCheck(this, MyCart);
-
-    return _possibleConstructorReturn(this, (MyCart.__proto__ || Object.getPrototypeOf(MyCart)).apply(this, arguments));
-  }
-
-  _createClass(MyCart, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'a',
-          { href: '/api/cart' },
-          'My Cart'
-        )
-      );
-    }
-  }]);
-
-  return MyCart;
-}(_react.Component);
-
-exports.default = MyCart;
-
-/***/ }),
+/* 411 */,
 /* 412 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -47258,7 +47205,7 @@ exports = module.exports = __webpack_require__(414)(false);
 
 
 // module
-exports.push([module.i, ".nav-main {\n  background-color: #dfdfdf;\n}\n\n.nav-right {\n  position: absolute;\n  right: 10px;\n  top: 55px;\n}\n\n.nav-fill {\n  position: absolute;\n  top: 20px;\n  left: 110px;\n  font-family: Lobster, Sans-Serif;\n  font-size: 40px;\n  min-width: 1100px;\n  text-align: right;\n}\n\n.nav-subnav {\n  height: 50px;\n  background-color:darkgray;\n  padding-top: 15px;\n  display: flex;\n  justify-content: space-around;\n}\n\na {\n  text-decoration: none;\n  font-size: 16px;\n  color: black;\n}\n\n.glyphicon {\n  color: black;\n}\n\n/*\nheader {\n  border-width: 0.14px;\n  border-color: #b5b7ba;\n  border-style: solid;\n  }\n\n\n\na {\n  color:black;\n  font-size: 16px;\n}\n\n\nli {\n  padding: 5px;\n}\n\n.glyphicon {\n  color: black;\n}\n\n.btn {\n  padding: 0px 10px;\n  color: black;\n  font-size: 16px;\n}\n\n.cart {\n  padding-top: 0px;\n}\n\n.btn-group button {\n  margin-top: 0;\n}\n*/\n", ""]);
+exports.push([module.i, ".nav-main {\n  background-color: #dfdfdf;\n}\n\n.nav-right {\n  position: absolute;\n  right: 10px;\n  top: 55px;\n}\n\n.nav-fill {\n  position: absolute;\n  top: 20px;\n  left: 110px;\n  font-family: Lobster, Sans-Serif;\n  font-size: 40px;\n  min-width: 1100px;\n  text-align: right;\n}\n\n.nav-subnav {\n  height: 50px;\n  background-color:darkgray;\n  padding-top: 15px;\n  display: flex;\n  justify-content: space-around;\n}\n\n.nav-subnav a {\n  text-decoration: none;\n  color: black;\n}\n\na {\n  font-size: 16px;\n  color: black;\n}\n\n.glyphicon {\n  color: black;\n}\n\n.nav-right a .modal-container button {\n  text-decoration: none;\n  color: black;\n  margin-top: 0;\n}\n\n.cart-icon,\n.wish-icon {\n  display: inline-block;\n}\n/*\n\n.btn {\n  padding: 0px 10px;\n  color: black;\n  font-size: 16px;\n}\n\n.cart {\n  padding-top: 0px;\n}\n\n.btn-group button {\n  margin-top: 0;\n}\n*/\n", ""]);
 
 // exports
 
@@ -48342,11 +48289,11 @@ var Cart = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'cart' },
+        { className: 'cart-icon' },
         _react2.default.createElement(
-          'h5',
-          null,
-          'My Cart'
+          'a',
+          { href: '/api/cart' },
+          ' My Cart'
         )
       );
     }

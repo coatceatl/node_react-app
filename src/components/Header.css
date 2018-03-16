@@ -26,38 +26,31 @@
   justify-content: space-around;
 }
 
-a {
+.nav-subnav a {
   text-decoration: none;
-  font-size: 16px;
   color: black;
 }
-
-.glyphicon {
-  color: black;
-}
-
-/*
-header {
-  border-width: 0.14px;
-  border-color: #b5b7ba;
-  border-style: solid;
-  }
-
-
 
 a {
-  color:black;
   font-size: 16px;
-}
-
-
-li {
-  padding: 5px;
+  color: black;
 }
 
 .glyphicon {
   color: black;
 }
+
+.nav-right a .modal-container button {
+  text-decoration: none;
+  color: black;
+  margin-top: 0;
+}
+
+.cart-icon,
+.wish-icon {
+  display: inline-block;
+}
+/*
 
 .btn {
   padding: 0px 10px;

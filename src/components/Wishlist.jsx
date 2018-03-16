@@ -13,7 +13,7 @@ class Wishlist extends Component {
 
   render() {
     return (
-      <div>
+      <div className='wish-icon'>
         <a href='/api/wishlist'>Wishlist</a>
       </div>
     );
