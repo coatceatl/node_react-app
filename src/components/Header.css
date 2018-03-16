@@ -32,7 +32,7 @@
 }
 
 a {
-  font-size: 16px;
+  font-size: 18px;
   color: black;
 }
 
@@ -50,19 +50,3 @@ a {
 .wish-icon {
   display: inline-block;
 }
-/*
-
-.btn {
-  padding: 0px 10px;
-  color: black;
-  font-size: 16px;
-}
-
-.cart {
-  padding-top: 0px;
-}
-
-.btn-group button {
-  margin-top: 0;
-}
-*/

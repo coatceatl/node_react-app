@@ -45,6 +45,7 @@ class Landing extends Component {
               </p>
               </Thumbnail>
             </Col>
+            {/*
             <Col xs={6} md={4}>
               <Thumbnail alt='Bunny with carrot'>
               <h3>BUNNY WITH CARROT</h3>
@@ -75,6 +76,8 @@ class Landing extends Component {
               </p>
               </Thumbnail>
             </Col>
+            */}
+
           </Row>
         </Grid>
 

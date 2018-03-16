@@ -35410,13 +35410,11 @@ var Header = function (_Component) {
             _react2.default.createElement(
               _reactBootstrap.Button,
               { bsStyle: 'link' },
-              _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'heart-empty' }),
               _react2.default.createElement(_Wishlist2.default, null)
             ),
             _react2.default.createElement(
               _reactBootstrap.Button,
               { bsStyle: 'link', className: 'cart' },
-              _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'shopping-cart' }),
               _react2.default.createElement(_Cart2.default, null)
             ),
             _react2.default.createElement(
@@ -47103,6 +47101,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactBootstrap = __webpack_require__(51);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -47131,10 +47131,11 @@ var Wishlist = function (_Component) {
       return _react2.default.createElement(
         'div',
         { className: 'wish-icon' },
+        _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'heart-empty' }),
         _react2.default.createElement(
           'a',
           { href: '/api/wishlist' },
-          'Wishlist'
+          ' Wishlist'
         )
       );
     }
@@ -47205,7 +47206,7 @@ exports = module.exports = __webpack_require__(414)(false);
 
 
 // module
-exports.push([module.i, ".nav-main {\n  background-color: #dfdfdf;\n}\n\n.nav-right {\n  position: absolute;\n  right: 10px;\n  top: 55px;\n}\n\n.nav-fill {\n  position: absolute;\n  top: 20px;\n  left: 110px;\n  font-family: Lobster, Sans-Serif;\n  font-size: 40px;\n  min-width: 1100px;\n  text-align: right;\n}\n\n.nav-subnav {\n  height: 50px;\n  background-color:darkgray;\n  padding-top: 15px;\n  display: flex;\n  justify-content: space-around;\n}\n\n.nav-subnav a {\n  text-decoration: none;\n  color: black;\n}\n\na {\n  font-size: 16px;\n  color: black;\n}\n\n.glyphicon {\n  color: black;\n}\n\n.nav-right a .modal-container button {\n  text-decoration: none;\n  color: black;\n  margin-top: 0;\n}\n\n.cart-icon,\n.wish-icon {\n  display: inline-block;\n}\n/*\n\n.btn {\n  padding: 0px 10px;\n  color: black;\n  font-size: 16px;\n}\n\n.cart {\n  padding-top: 0px;\n}\n\n.btn-group button {\n  margin-top: 0;\n}\n*/\n", ""]);
+exports.push([module.i, ".nav-main {\n  background-color: #dfdfdf;\n}\n\n.nav-right {\n  position: absolute;\n  right: 10px;\n  top: 55px;\n}\n\n.nav-fill {\n  position: absolute;\n  top: 20px;\n  left: 110px;\n  font-family: Lobster, Sans-Serif;\n  font-size: 40px;\n  min-width: 1100px;\n  text-align: right;\n}\n\n.nav-subnav {\n  height: 50px;\n  background-color:darkgray;\n  padding-top: 15px;\n  display: flex;\n  justify-content: space-around;\n}\n\n.nav-subnav a {\n  text-decoration: none;\n  color: black;\n}\n\na {\n  font-size: 18px;\n  color: black;\n}\n\n.glyphicon {\n  color: black;\n}\n\n.nav-right a .modal-container button {\n  text-decoration: none;\n  color: black;\n  margin-top: 0;\n}\n\n.cart-icon,\n.wish-icon {\n  display: inline-block;\n}\n", ""]);
 
 // exports
 
@@ -47925,105 +47926,6 @@ var Landing = function (_Component) {
                   )
                 )
               )
-            ),
-            _react2.default.createElement(
-              _reactBootstrap.Col,
-              { xs: 6, md: 4 },
-              _react2.default.createElement(
-                _reactBootstrap.Thumbnail,
-                { alt: 'Bunny with carrot' },
-                _react2.default.createElement(
-                  'h3',
-                  null,
-                  'BUNNY WITH CARROT'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Price'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    _reactBootstrap.Button,
-                    { bsStyle: 'primary' },
-                    'Add to Cart'
-                  ),
-                  '\xA0',
-                  _react2.default.createElement(
-                    _reactBootstrap.Button,
-                    { bsStyle: 'default' },
-                    'Add to List'
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              _reactBootstrap.Col,
-              { xs: 6, md: 4 },
-              _react2.default.createElement(
-                _reactBootstrap.Thumbnail,
-                { alt: 'Horse' },
-                _react2.default.createElement(
-                  'h3',
-                  null,
-                  'HORSE'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Price'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    _reactBootstrap.Button,
-                    { bsStyle: 'primary' },
-                    'Add to Cart'
-                  ),
-                  '\xA0',
-                  _react2.default.createElement(
-                    _reactBootstrap.Button,
-                    { bsStyle: 'default' },
-                    'Add to List'
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              _reactBootstrap.Col,
-              { xs: 6, md: 4 },
-              _react2.default.createElement(
-                _reactBootstrap.Thumbnail,
-                { alt: 'Cat love sport' },
-                _react2.default.createElement(
-                  'h3',
-                  null,
-                  'CAT LOVE SPORT'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Price'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    _reactBootstrap.Button,
-                    { bsStyle: 'primary' },
-                    'Add to Cart'
-                  ),
-                  '\xA0',
-                  _react2.default.createElement(
-                    _reactBootstrap.Button,
-                    { bsStyle: 'default' },
-                    'Add to List'
-                  )
-                )
-              )
             )
           )
         )
@@ -48107,7 +48009,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactBootstrap = __webpack_require__(51);
+__webpack_require__(428);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48130,40 +48032,36 @@ var Footer = function (_Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        _reactBootstrap.Grid,
-        null,
+        'div',
+        { className: 'footer-nav' },
         _react2.default.createElement(
-          _reactBootstrap.Row,
+          'div',
           { className: 'show-grid' },
+          'Created by \xA9 coatceatl \u25CF  2018'
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
           _react2.default.createElement(
-            _reactBootstrap.Col,
-            { xs: 6, md: 4 },
-            '\xA9 2018'
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Col,
-            { xs: 6, md: 4 },
+            'a',
+            { href: 'https://www.instagram.com/funny_toys_amiguru/' },
             _react2.default.createElement(
-              'a',
-              { href: 'https://www.instagram.com/funny_toys_amiguru/' },
-              _react2.default.createElement(
-                'h4',
-                null,
-                'Follow on Instagram'
-              )
+              'h4',
+              null,
+              'Follow on Instagram'
             )
-          ),
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
           _react2.default.createElement(
-            _reactBootstrap.Col,
-            { xs: 6, md: 4 },
+            'a',
+            { href: 'https://www.facebook.com/FunnyAmiguru/' },
             _react2.default.createElement(
-              'a',
-              { href: 'https://www.facebook.com/FunnyAmiguru/' },
-              _react2.default.createElement(
-                'h4',
-                null,
-                'Like on Facebook'
-              )
+              'h4',
+              null,
+              'Like on Facebook'
             )
           )
         )
@@ -48267,6 +48165,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactBootstrap = __webpack_require__(51);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48290,10 +48190,11 @@ var Cart = function (_Component) {
       return _react2.default.createElement(
         'div',
         { className: 'cart-icon' },
+        _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'shopping-cart' }),
         _react2.default.createElement(
           'a',
           { href: '/api/cart' },
-          ' My Cart'
+          ' Cart'
         )
       );
     }
@@ -48536,6 +48437,70 @@ exports = module.exports = __webpack_require__(414)(false);
 
 // module
 exports.push([module.i, ".modal-content {\n  width: 350px;\n  min-height: 40vh;\n}\n\n.modal-header {\n  text-align: center;\n}\n\n#contained-modal-title {\n  text-transform: uppercase;\n  letter-spacing: .3rem;\n}\n\n.modal-body {\n  display: flex;\n  justify-content: center;\n}\n\n.btn-group-vertical a {\n  text-decoration: none;\n  font-size: 25px;\n}\n\nbutton {\n  padding: 10px 20px;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 428 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(429);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(415)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../node_modules/css-loader/index.js!./Footer.css", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js!./Footer.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 429 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(414)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".footer-nav {\n  background-color: #dfdfdf;\n  display: flex;\n  justify-content: center;\n}\n\n", ""]);
 
 // exports
 

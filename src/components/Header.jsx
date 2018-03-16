@@ -11,7 +11,6 @@ import {
   NavItem,
   Button,
   ButtonGroup,
-  Glyphicon
 } from 'react-bootstrap';
 
 class Header extends Component {
@@ -29,10 +28,9 @@ class Header extends Component {
         return (
           <ButtonGroup>
             <Button bsStyle='link'>
-              <Glyphicon glyph='heart-empty' /><Wishlist />
+              <Wishlist />
             </Button>
             <Button bsStyle='link'className='cart'>
-              <Glyphicon glyph='shopping-cart' />
               <Cart />
             </Button>
             <Button bsStyle='link'>

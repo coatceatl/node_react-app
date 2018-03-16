@@ -1,30 +1,24 @@
 import React, { Component } from 'react';
-import {
-  Grid,
-  Row,
-  Col
-} from 'react-bootstrap';
+import './Footer.css';
 
 class Footer extends Component {
   render () {
     return (
-        <Grid>
-          <Row className="show-grid">
-            <Col xs={6} md={4}>
-              &copy; 2018
-            </Col>
-            <Col xs={6} md={4}>
-              <a href='https://www.instagram.com/funny_toys_amiguru/'>
-                <h4>Follow on Instagram</h4>
-              </a>
-            </Col>
-            <Col xs={6} md={4}>
-              <a href='https://www.facebook.com/FunnyAmiguru/'>
-                <h4>Like on Facebook</h4>
-              </a>
-            </Col>
-          </Row>
-        </Grid>
+      <div className='footer-nav'>
+          <div className="show-grid">
+            Created by &copy; coatceatl ●  2018
+          </div>
+          <div>
+            <a href='https://www.instagram.com/funny_toys_amiguru/'>
+              <h4>Follow on Instagram</h4>
+            </a>
+          </div>
+          <div>
+            <a href='https://www.facebook.com/FunnyAmiguru/'>
+              <h4>Like on Facebook</h4>
+            </a>
+          </div>
+      </div>
     );
   }
 }

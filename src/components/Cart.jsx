@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { Glyphicon } from 'react-bootstrap';
 
 class Cart extends Component {
   render() {
     return (
       <div className='cart-icon'>
-        <a href='/api/cart'> My Cart</a>
+        <Glyphicon glyph='shopping-cart' /><a href='/api/cart'> Cart</a>
       </div>
     );
   }

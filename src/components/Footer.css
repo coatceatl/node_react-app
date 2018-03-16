@@ -1,6 +1,6 @@
-.container {
-   background-color: #dfdfdf;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.footer-nav {
+  background-color: #dfdfdf;
+  display: flex;
+  justify-content: center;
 }
+
