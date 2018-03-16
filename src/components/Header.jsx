@@ -46,29 +46,22 @@ class Header extends Component {
 
   render () {
     return (
-      <div>
-        <header>
-          <div id='navbar'>
-            <div id='nav-main'>
-              <div className='nav-left'>
-                <a href='#home'><img className='logo' width={100} height={100} src='img/Logo_blue1.png' /></a>
-              </div>
-              <div className='nav-right'>
-                <div className='signin'>
-                  <a href='/about'>About</a>
-                  <a href='#'>{this.renderContent()}</a>
-                </div>
-              </div>
-              <div className='nav-fill'>Get something special for that someone special</div>
-              </div>
-            <div id='nav-subnav'>
-              <a href='#'><span className='nav-content'>ANIMALS</span></a>
-              <a href='#'><span className='nav-content'>DOLLS</span></a>
-              <a href='#'><span className='nav-content'>CARTOON CHARACTERS</span></a>
-            </div>
+      <header className='nav'>
+        <div className='nav-main'>
+          <div className='nav-left'>
+            <a href='#home'><img className='logo' width={100} height={100} src='img/Logo_blue1.png' /></a>
           </div>
-        </header>
-      </div>
+          <div className='nav-right'>
+            <a href='#'>{this.renderContent()}</a>
+          </div>
+          <div className='nav-fill'>Get something special for that someone special</div>
+        </div>
+        <div className='nav-subnav'>
+          <a href='#'><span className='nav-content'>ANIMALS</span></a>
+          <a href='#'><span className='nav-content'>DOLLS</span></a>
+          <a href='#'><span className='nav-content'>CARTOON CHARACTERS</span></a>
+        </div>
+      </header>
     );
   }
 }

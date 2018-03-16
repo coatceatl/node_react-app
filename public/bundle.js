@@ -35435,80 +35435,63 @@ var Header = function (_Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'div',
-        null,
+        'header',
+        { className: 'nav' },
         _react2.default.createElement(
-          'header',
-          null,
+          'div',
+          { className: 'nav-main' },
           _react2.default.createElement(
             'div',
-            { id: 'navbar' },
+            { className: 'nav-left' },
             _react2.default.createElement(
-              'div',
-              { id: 'nav-main' },
-              _react2.default.createElement(
-                'div',
-                { className: 'nav-left' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#home' },
-                  _react2.default.createElement('img', { className: 'logo', width: 100, height: 100, src: 'img/Logo_blue1.png' })
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'nav-right' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'signin' },
-                  _react2.default.createElement(
-                    'a',
-                    { href: '/about' },
-                    'About'
-                  ),
-                  _react2.default.createElement(
-                    'a',
-                    { href: '#' },
-                    this.renderContent()
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'nav-fill' },
-                'Get something special for that someone special'
-              )
-            ),
+              'a',
+              { href: '#home' },
+              _react2.default.createElement('img', { className: 'logo', width: 100, height: 100, src: 'img/Logo_blue1.png' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'nav-right' },
             _react2.default.createElement(
-              'div',
-              { id: 'nav-subnav' },
-              _react2.default.createElement(
-                'a',
-                { href: '#' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'nav-content' },
-                  'ANIMALS'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'nav-content' },
-                  'DOLLS'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'nav-content' },
-                  'CARTOON CHARACTERS'
-                )
-              )
+              'a',
+              { href: '#' },
+              this.renderContent()
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'nav-fill' },
+            'Get something special for that someone special'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'nav-subnav' },
+          _react2.default.createElement(
+            'a',
+            { href: '#' },
+            _react2.default.createElement(
+              'span',
+              { className: 'nav-content' },
+              'ANIMALS'
+            )
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: '#' },
+            _react2.default.createElement(
+              'span',
+              { className: 'nav-content' },
+              'DOLLS'
+            )
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: '#' },
+            _react2.default.createElement(
+              'span',
+              { className: 'nav-content' },
+              'CARTOON CHARACTERS'
             )
           )
         )
@@ -47275,7 +47258,7 @@ exports = module.exports = __webpack_require__(414)(false);
 
 
 // module
-exports.push([module.i, "body {\n  background-color: #f7f7f7;\n}\n\nheader {\n  border-width: 0.14px;\n  border-color: #b5b7ba;\n  border-style: solid;\n  background-color: #dfdfdf;\n  align-items: center;\n}\n\n#nav-main {\n  width: 100%;\n  height: 100px;\n  position: relative;\n  justify-content: space-between;\n}\n\n.nav-left {\n  position: relative;\n  float: left;\n}\n\n.nav-right {\n  position: relative;\n  float: right;\n  width: auto;\n  display: inline-block;\n  vertical-align: bottom;\n}\n\na .container .nav-right {\n  width: 70px;\n}\n\n.nav-fill {\n  width: auto;\n  font-size: 30px;\n  text-align: center;\n  padding-top: 20px;\n  font-family: Lobster, Sans-Serif;\n}\n\n#nav-subnav {\n  height: 50px;\n  text-align: center;\n  background-color:darkgray;\n  padding-top: 10px;\n}\n\n#navbar {\n  position: relative;\n  background-color: #efeded;\n  height: 150px;\n  border-color: #e7e7e7;\n}\n\n.signin {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  padding-right: 10px;\n  display: flex;\n  justify-content: space-around;\n  width: 350px;\n  height: 150px;\n}\n\na {\n  color:black;\n  font-size: 16px;\n}\n\n.nav-content {\n  padding: 5px;\n  height: 48px;\n  display: inline-block;\n  width: 20%;\n}\n\nli {\n  padding: 5px;\n}\n\n.glyphicon {\n  color: black;\n}\n\n.btn {\n  padding: 0px 10px;\n  color: black;\n  font-size: 16px;\n}\n\n.cart {\n  padding-top: 0px;\n}\n\n.btn-group button {\n  margin-top: 0;\n}\n", ""]);
+exports.push([module.i, ".nav-main {\n  background-color: #dfdfdf;\n}\n\n.nav-right {\n  position: absolute;\n  right: 10px;\n  top: 55px;\n}\n\n.nav-fill {\n  position: absolute;\n  top: 20px;\n  left: 110px;\n  font-family: Lobster, Sans-Serif;\n  font-size: 40px;\n  min-width: 1100px;\n  text-align: right;\n}\n\n.nav-subnav {\n  height: 50px;\n  background-color:darkgray;\n  padding-top: 15px;\n  display: flex;\n  justify-content: space-around;\n}\n\n/*\nheader {\n  border-width: 0.14px;\n  border-color: #b5b7ba;\n  border-style: solid;\n  }\n\na .container .nav-right {\n  width: 70px;\n}\n\n\n#nav-subnav {\n  height: 50px;\n  text-align: center;\n  background-color:darkgray;\n  padding-top: 10px;\n}\n\n#navbar {\n  position: relative;\n  background-color: #efeded;\n  height: 150px;\n  border-color: #e7e7e7;\n}\n\n.signin {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  padding-right: 10px;\n  display: flex;\n  justify-content: space-around;\n  height: 150px;\n}\n\na {\n  color:black;\n  font-size: 16px;\n}\n\n.nav-content {\n  padding: 5px;\n  height: 48px;\n  display: inline-block;\n  width: 20%;\n}\n\nli {\n  padding: 5px;\n}\n\n.glyphicon {\n  color: black;\n}\n\n.btn {\n  padding: 0px 10px;\n  color: black;\n  font-size: 16px;\n}\n\n.cart {\n  padding-top: 0px;\n}\n\n.btn-group button {\n  margin-top: 0;\n}\n*/\n", ""]);
 
 // exports
 
