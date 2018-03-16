@@ -26,6 +26,16 @@
   justify-content: space-around;
 }
 
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+
+.glyphicon {
+  color: black;
+}
+
 /*
 header {
   border-width: 0.14px;
@@ -33,45 +43,13 @@ header {
   border-style: solid;
   }
 
-a .container .nav-right {
-  width: 70px;
-}
 
-
-#nav-subnav {
-  height: 50px;
-  text-align: center;
-  background-color:darkgray;
-  padding-top: 10px;
-}
-
-#navbar {
-  position: relative;
-  background-color: #efeded;
-  height: 150px;
-  border-color: #e7e7e7;
-}
-
-.signin {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 10px;
-  display: flex;
-  justify-content: space-around;
-  height: 150px;
-}
 
 a {
   color:black;
   font-size: 16px;
 }
 
-.nav-content {
-  padding: 5px;
-  height: 48px;
-  display: inline-block;
-  width: 20%;
-}
 
 li {
   padding: 5px;
