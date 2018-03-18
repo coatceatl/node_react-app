@@ -48173,19 +48173,6 @@ var Footer = function (_Component) {
           'div',
           null,
           _react2.default.createElement(_Social2.default, null)
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            _reactRouterDom.Link,
-            { to: 'https://www.facebook.com/FunnyAmiguru/' },
-            _react2.default.createElement(
-              'h4',
-              null,
-              'Like on Facebook'
-            )
-          )
         )
       );
     }
@@ -48546,6 +48533,10 @@ var Social = function (_Component) {
         name: 'Instagram',
         fa: 'fab fa-instagram',
         link: 'https://www.instagram.com/funny_toys_amiguru/'
+      }, {
+        name: 'Facebook',
+        fa: 'fab fa-facebook',
+        link: 'https://www.facebook.com/FunnyAmiguru/'
       }]
     };
     return _this;

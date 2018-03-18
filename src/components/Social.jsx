@@ -11,6 +11,11 @@ class Social extends Component {
           fa: 'fab fa-instagram',
           link: 'https://www.instagram.com/funny_toys_amiguru/'
         },
+        {
+          name: 'Facebook',
+          fa: 'fab fa-facebook',
+          link: 'https://www.facebook.com/FunnyAmiguru/'
+        },
       ]
     }
   }
