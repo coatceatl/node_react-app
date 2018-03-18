@@ -48133,6 +48133,12 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(219);
+
+var _Social = __webpack_require__(429);
+
+var _Social2 = _interopRequireDefault(_Social);
+
 __webpack_require__(422);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -48160,28 +48166,20 @@ var Footer = function (_Component) {
         { className: 'footer-nav' },
         _react2.default.createElement(
           'div',
-          { className: 'show-grid' },
+          null,
           'Created by \xA9 coatceatl \u25CF  2018'
         ),
         _react2.default.createElement(
           'div',
           null,
-          _react2.default.createElement(
-            'a',
-            { href: 'https://www.instagram.com/funny_toys_amiguru/' },
-            _react2.default.createElement(
-              'h4',
-              null,
-              'Follow on Instagram'
-            )
-          )
+          _react2.default.createElement(_Social2.default, null)
         ),
         _react2.default.createElement(
           'div',
           null,
           _react2.default.createElement(
-            'a',
-            { href: 'https://www.facebook.com/FunnyAmiguru/' },
+            _reactRouterDom.Link,
+            { to: 'https://www.facebook.com/FunnyAmiguru/' },
             _react2.default.createElement(
               'h4',
               null,
@@ -48507,6 +48505,62 @@ exports.default = function () {
 };
 
 var _types = __webpack_require__(133);
+
+/***/ }),
+/* 429 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+//import { Link } from 'react-router-dom';
+
+var Social = function (_Component) {
+  _inherits(Social, _Component);
+
+  function Social() {
+    _classCallCheck(this, Social);
+
+    return _possibleConstructorReturn(this, (Social.__proto__ || Object.getPrototypeOf(Social)).apply(this, arguments));
+  }
+
+  _createClass(Social, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'social-links' },
+        _react2.default.createElement(
+          'a',
+          { href: 'https://www.instagram.com/funny_toys_amiguru/' },
+          _react2.default.createElement('i', { className: 'fab fa-instagram' })
+        )
+      );
+    }
+  }]);
+
+  return Social;
+}(_react.Component);
+
+exports.default = Social;
 
 /***/ })
 /******/ ]);
