@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Glyphicon } from 'react-bootstrap';
 
 class Wishlist extends Component {
@@ -15,7 +16,7 @@ class Wishlist extends Component {
   render() {
     return (
       <div className='wish-icon'>
-        <Glyphicon glyph='heart-empty' /><a href='/api/wishlist'> Wishlist</a>
+        <Glyphicon glyph='heart-empty' /><Link to='/api/wishlist'> Wishlist</Link>
       </div>
     );
   }

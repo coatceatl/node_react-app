@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Trigger from './Trigger.jsx';
 import Wishlist from './Wishlist.jsx';
@@ -34,7 +35,7 @@ class Header extends Component {
               <Cart />
             </Button>
             <Button bsStyle='link'>
-              <a href='/api/logout'>Logout</a>
+              <Link to='/api/logout'>Logout</Link>
             </Button>
           </ButtonGroup>
         );
@@ -46,17 +47,17 @@ class Header extends Component {
       <header className='nav'>
         <div className='nav-main'>
           <div className='nav-left'>
-            <a href='#home'><img className='logo' width={100} height={100} src='img/Logo_blue1.png' /></a>
+            <Link to='#home'><img className='logo' width={100} height={100} src='img/Logo_blue1.png' /></Link>
           </div>
           <div className='nav-right'>
-            <a href='#'>{this.renderContent()}</a>
+            <Link to='#'>{this.renderContent()}</Link>
           </div>
           <div className='nav-fill'>Get something special for that someone special</div>
         </div>
         <div className='nav-subnav'>
-          <a href='#'><span className='nav-content'>ANIMALS</span></a>
-          <a href='#'><span className='nav-content'>DOLLS</span></a>
-          <a href='#'><span className='nav-content'>CARTOON CHARACTERS</span></a>
+          <Link to='#'><span className='nav-content'>ANIMALS</span></Link>
+          <Link to='#'><span className='nav-content'>DOLLS</span></Link>
+          <Link to='#'><span className='nav-content'>CARTOON CHARACTERS</span></Link>
         </div>
       </header>
     );
