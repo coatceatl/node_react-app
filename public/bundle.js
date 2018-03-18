@@ -48536,23 +48536,43 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Social = function (_Component) {
   _inherits(Social, _Component);
 
-  function Social() {
+  function Social(props) {
     _classCallCheck(this, Social);
 
-    return _possibleConstructorReturn(this, (Social.__proto__ || Object.getPrototypeOf(Social)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (Social.__proto__ || Object.getPrototypeOf(Social)).call(this, props));
+
+    _this.state = {
+      socialLinks: [{
+        name: 'Instagram',
+        fa: 'fab fa-instagram',
+        link: 'https://www.instagram.com/funny_toys_amiguru/'
+      }]
+    };
+    return _this;
   }
 
   _createClass(Social, [{
     key: 'render',
     value: function render() {
+      var socialLinks = this.state.socialLinks;
       return _react2.default.createElement(
         'div',
         { className: 'social-links' },
-        _react2.default.createElement(
-          'a',
-          { href: 'https://www.instagram.com/funny_toys_amiguru/' },
-          _react2.default.createElement('i', { className: 'fab fa-instagram' })
-        )
+        socialLinks.map(function (social) {
+          return _react2.default.createElement(
+            'div',
+            { className: 'social-link', key: social.name },
+            _react2.default.createElement(
+              'a',
+              {
+                href: social.link,
+                fa: social.fa,
+                target: '_blank'
+              },
+              _react2.default.createElement('i', { className: 'fa ' + social.fa, 'aria-hidden': 'true' })
+            )
+          );
+        })
       );
     }
   }]);
