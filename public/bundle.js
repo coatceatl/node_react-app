@@ -48167,7 +48167,7 @@ var Footer = function (_Component) {
         _react2.default.createElement(
           'div',
           null,
-          'Created by \xA9 coatceatl \u25CF  2018'
+          'Created by \xA9 coatceatl - 2018'
         ),
         _react2.default.createElement(
           'div',
@@ -48242,7 +48242,7 @@ exports = module.exports = __webpack_require__(76)(false);
 
 
 // module
-exports.push([module.i, ".footer-nav {\n  background-color: #dfdfdf;\n  display: flex;\n  justify-content: center;\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n}\n\n", ""]);
+exports.push([module.i, ".footer-nav {\n  background-color: #dfdfdf;\n  display: flex;\n  justify-content: center;\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  font-size: 16px;\n}\n\n.social-links {\n  display: flex;\n}\n\n.social-link {\n  padding-left: 15px;\n}\n\n", ""]);
 
 // exports
 

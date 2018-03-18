@@ -8,7 +8,7 @@ class Footer extends Component {
     return (
       <div className='footer-nav'>
         <div>
-          Created by &copy; coatceatl ●  2018
+          Created by &copy; coatceatl - 2018
         </div>
         <div>
           <Social />
