@@ -48173,6 +48173,11 @@ var Footer = function (_Component) {
           'div',
           null,
           _react2.default.createElement(_Social2.default, null)
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'contact' },
+          'Contact me!'
         )
       );
     }
@@ -48242,7 +48247,7 @@ exports = module.exports = __webpack_require__(76)(false);
 
 
 // module
-exports.push([module.i, ".footer-nav {\n  background-color: #dfdfdf;\n  display: flex;\n  justify-content: center;\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  font-size: 16px;\n}\n\n.social-links {\n  display: flex;\n}\n\n.social-link {\n  padding-left: 15px;\n}\n\n", ""]);
+exports.push([module.i, ".footer-nav {\n  background-color: #dfdfdf;\n  display: flex;\n  justify-content: center;\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  font-size: 20px;\n  height: 50px;\n  padding-top: 13px;\n}\n\n.social-links {\n  display: flex;\n}\n\n.social-link {\n  padding-left: 15px;\n}\n\n.contact {\n  padding-left: 35px;\n}\n\n", ""]);
 
 // exports
 

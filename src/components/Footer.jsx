@@ -13,6 +13,9 @@ class Footer extends Component {
         <div>
           <Social />
         </div>
+        <div className='contact'>
+          Contact me!
+        </div>
       </div>
     );
   }

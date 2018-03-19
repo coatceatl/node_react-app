@@ -5,7 +5,9 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
+  height: 50px;
+  padding-top: 13px;
 }
 
 .social-links {
@@ -14,5 +16,9 @@
 
 .social-link {
   padding-left: 15px;
+}
+
+.contact {
+  padding-left: 35px;
 }
 
