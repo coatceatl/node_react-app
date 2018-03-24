@@ -3,7 +3,16 @@ import React, { Component } from 'react';
 class FormModal extends Component {
   render() {
     return(
-      <h3>Form Modal</h3>
+      <div className='contact-form'>
+        <form>
+          <h1>Contact me</h1>
+          <div className='form-items'>
+            <div className='button-holders'>
+              Name
+            </div>
+          </div>
+        </form>
+      </div>
     );
   }
 }

@@ -48338,6 +48338,7 @@ var Contact = function (_Component) {
         _react2.default.createElement(
           _reactModal2.default,
           { isOpen: this.state.showModal },
+          _react2.default.createElement(_FormModal2.default, null),
           _react2.default.createElement(
             'button',
             { onClick: this.handleCloseModal },
@@ -48701,9 +48702,26 @@ var FormModal = function (_Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'h3',
-        null,
-        'Form Modal'
+        'div',
+        { className: 'contact-form' },
+        _react2.default.createElement(
+          'form',
+          null,
+          _react2.default.createElement(
+            'h1',
+            null,
+            'Contact me'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'form-items' },
+            _react2.default.createElement(
+              'div',
+              { className: 'button-holders' },
+              'Name'
+            )
+          )
+        )
       );
     }
   }]);

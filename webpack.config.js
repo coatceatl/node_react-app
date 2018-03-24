@@ -13,7 +13,6 @@ module.exports = {
         exclude: /node_modules/,
         loader:'babel-loader',
         query: {
-          cacheDirectory: 'babel_cache',
           presets: ['env', 'react']
         }
       },

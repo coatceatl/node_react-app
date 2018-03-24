@@ -26,6 +26,7 @@ class Contact extends Component {
       <div>
         <button onClick={this.handleOpenModal}>Contact me!</button>
         <Modal isOpen={this.state.showModal}>
+          <FormModal />
           <button onClick={this.handleCloseModal}>Closw Modal window</button>
         </Modal>
       </div>
