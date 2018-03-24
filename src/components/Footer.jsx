@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Social from './Social.jsx';
+import Contact from './Contact.jsx';
 import './Footer.css';
 
 class Footer extends Component {
@@ -14,7 +15,7 @@ class Footer extends Component {
           <Social />
         </div>
         <div className='contact'>
-          Contact me!
+          <Contact />
         </div>
       </div>
     );
