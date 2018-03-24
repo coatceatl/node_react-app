@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import Modal from 'react-modal';
 import FormModal from './FormModal.jsx';
 
+const customStyle = {
+  content: {
+    position: 'relative',
+    top: '300px',
+    left: '600px',
+    width: '500px'
+  }
+}
+
 class Contact extends Component {
   constructor() {
     super();
@@ -24,10 +33,21 @@ class Contact extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleOpenModal}>Contact me!</button>
-        <Modal isOpen={this.state.showModal}>
+        <button
+          onClick={this.handleOpenModal}
+        >
+          Contact me!
+        </button>
+        <Modal
+          isOpen={this.state.showModal}
+          style={customStyle}
+        >
           <FormModal />
-          <button onClick={this.handleCloseModal}>Closw Modal window</button>
+          <button
+            onClick={this.handleCloseModal}
+          >
+            Close Modal window
+          </button>
         </Modal>
       </div>
     )

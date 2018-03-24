@@ -48297,6 +48297,15 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var customStyle = {
+  content: {
+    position: 'relative',
+    top: '300px',
+    left: '600px',
+    width: '500px'
+  }
+};
+
 var Contact = function (_Component) {
   _inherits(Contact, _Component);
 
@@ -48332,17 +48341,24 @@ var Contact = function (_Component) {
         null,
         _react2.default.createElement(
           'button',
-          { onClick: this.handleOpenModal },
+          {
+            onClick: this.handleOpenModal
+          },
           'Contact me!'
         ),
         _react2.default.createElement(
           _reactModal2.default,
-          { isOpen: this.state.showModal },
+          {
+            isOpen: this.state.showModal,
+            style: customStyle
+          },
           _react2.default.createElement(_FormModal2.default, null),
           _react2.default.createElement(
             'button',
-            { onClick: this.handleCloseModal },
-            'Closw Modal window'
+            {
+              onClick: this.handleCloseModal
+            },
+            'Close Modal window'
           )
         )
       );
