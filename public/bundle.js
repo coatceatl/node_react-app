@@ -48719,7 +48719,33 @@ var FormModal = function (_Component) {
               'div',
               { className: 'button-holders' },
               'Name'
-            )
+            ),
+            _react2.default.createElement('input', { type: 'text', name: 'name' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'form-items' },
+            _react2.default.createElement(
+              'div',
+              { className: 'button-holders' },
+              'Email'
+            ),
+            _react2.default.createElement('input', { type: 'text', name: 'email' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'form-items' },
+            _react2.default.createElement(
+              'div',
+              { className: 'button-holders' },
+              'Your Message'
+            ),
+            _react2.default.createElement('input', { type: 'text', name: 'message' })
+          ),
+          _react2.default.createElement(
+            'button',
+            { type: 'submit' },
+            'Send'
           )
         )
       );
