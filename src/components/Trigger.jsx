@@ -45,8 +45,15 @@ class Trigger extends Component {
           </Modal.Header>
           <Modal.Body>
             <ButtonGroup vertical>
-              <Button bsStyle="primary"><a href='/auth/facebook'><i class='fab fa-facebook'></i> Sign in with Facebook</a></Button>
-              <Button bsStyle="danger"><a href='/auth/google'><i class='fab fa-google'></i> Sign in with Google</a></Button>
+              <Button
+                bsStyle="primary"
+              >
+                <a href='/auth/facebook'>
+                  <i className='fab fa-facebook'></i> Sign in with Facebook
+                </a></Button>
+                <Button
+                  bsStyle="danger"
+                ><a href='/auth/google'><i className='fab fa-google'></i> Sign in with Google</a></Button>
             </ButtonGroup>
           </Modal.Body>
         </Modal>

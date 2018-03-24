@@ -35944,8 +35944,8 @@ var Header = function (_Component) {
               _reactBootstrap.Button,
               { bsStyle: 'link' },
               _react2.default.createElement(
-                _reactRouterDom.Link,
-                { to: '/api/logout' },
+                'a',
+                { href: '/api/logout' },
                 'Logout'
               )
             )
@@ -35974,8 +35974,8 @@ var Header = function (_Component) {
             'div',
             { className: 'nav-right' },
             _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '#' },
+              'a',
+              { href: '#' },
               this.renderContent()
             )
           ),
@@ -36123,21 +36123,25 @@ var Trigger = function (_Component) {
               { vertical: true },
               _react2.default.createElement(
                 _reactBootstrap.Button,
-                { bsStyle: 'primary' },
+                {
+                  bsStyle: 'primary'
+                },
                 _react2.default.createElement(
                   'a',
                   { href: '/auth/facebook' },
-                  _react2.default.createElement('i', { 'class': 'fab fa-facebook' }),
+                  _react2.default.createElement('i', { className: 'fab fa-facebook' }),
                   ' Sign in with Facebook'
                 )
               ),
               _react2.default.createElement(
                 _reactBootstrap.Button,
-                { bsStyle: 'danger' },
+                {
+                  bsStyle: 'danger'
+                },
                 _react2.default.createElement(
                   'a',
                   { href: '/auth/google' },
-                  _react2.default.createElement('i', { 'class': 'fab fa-google' }),
+                  _react2.default.createElement('i', { className: 'fab fa-google' }),
                   ' Sign in with Google'
                 )
               )

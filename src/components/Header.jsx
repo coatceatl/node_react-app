@@ -31,11 +31,11 @@ class Header extends Component {
             <Button bsStyle='link'>
               <Wishlist />
             </Button>
-            <Button bsStyle='link'className='cart'>
+            <Button bsStyle='link' className='cart'>
               <Cart />
             </Button>
             <Button bsStyle='link'>
-              <Link to='/api/logout'>Logout</Link>
+              <a href='/api/logout'>Logout</a>
             </Button>
           </ButtonGroup>
         );
@@ -50,7 +50,7 @@ class Header extends Component {
             <Link to='#home'><img className='logo' width={100} height={100} src='img/Logo_blue1.png' /></Link>
           </div>
           <div className='nav-right'>
-            <Link to='#'>{this.renderContent()}</Link>
+            <a href='#'>{this.renderContent()}</a>
           </div>
           <div className='nav-fill'>Get something special for that someone special</div>
         </div>
