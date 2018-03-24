@@ -48303,10 +48303,28 @@ var Contact = function (_Component) {
   function Contact() {
     _classCallCheck(this, Contact);
 
-    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this));
+
+    _this.state = {
+      showModal: false
+    };
+
+    _this.handleOpenModal = _this.handleOpenModal.bind(_this);
+    _this.handleCloseModal = _this.handleCloseModal.bind(_this);
+    return _this;
   }
 
   _createClass(Contact, [{
+    key: 'handleOpenModal',
+    value: function handleOpenModal() {
+      this.setState({ showModal: true });
+    }
+  }, {
+    key: 'handleCloseModal',
+    value: function handleCloseModal() {
+      this.setState({ showModal: false });
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -48314,10 +48332,18 @@ var Contact = function (_Component) {
         null,
         _react2.default.createElement(
           'button',
-          null,
+          { onClick: this.handleOpenModal },
           'Contact me!'
         ),
-        _react2.default.createElement(_FormModal2.default, null)
+        _react2.default.createElement(
+          _reactModal2.default,
+          { isOpen: this.state.showModal },
+          _react2.default.createElement(
+            'button',
+            { onClick: this.handleCloseModal },
+            'Closw Modal window'
+          )
+        )
       );
     }
   }]);
