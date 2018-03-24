@@ -19,6 +19,7 @@
   width: 100%;
 }
 */
-.container {
-  display: unset;
+
+.thumbnail>img {
+  border-radius: 50%;
 }

@@ -47915,6 +47915,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+__webpack_require__(442);
+
 var _reactBootstrap = __webpack_require__(41);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -49981,6 +49983,70 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	}
 
 }());
+
+
+/***/ }),
+/* 442 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(443);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(78)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../node_modules/css-loader/index.js!./Landing.css", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js!./Landing.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 443 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(77)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*\n.carousel-inner {\n  padding: 15px;\n  display: flex;\n  flex-wrap: wrap;\n  max-width: none !important;\n  min-width: 100%;\n  position: absolute;\n  height: 300px;\n\n}\n\n.carousel-indicator {\n  padding: 15px;\n}\n\n.item {\n  height: 200px;\n  width: 100%;\n}\n*/\n\n.thumbnail>img {\n  border-radius: 50%;\n}\n", ""]);
+
+// exports
 
 
 /***/ })

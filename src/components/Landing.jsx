@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Landing.css';
 //import product from '../../serverside/db/dbToys.js';
 import {
   Button,
